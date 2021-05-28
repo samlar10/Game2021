@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/NikitaMesh_A_Pose.obj-4da3365a12d66fed1e0fca2007ac3f5a.mesh"
+
+[deps]
+
+files=[ "res://.import/NikitaMesh_A_Pose.obj-4da3365a12d66fed1e0fca2007ac3f5a.mesh" ]
+
+source_file="res://3D assests/Soldier/NikitaMesh_A_Pose.obj"
+dest_files=[ "res://.import/NikitaMesh_A_Pose.obj-4da3365a12d66fed1e0fca2007ac3f5a.mesh", "res://.import/NikitaMesh_A_Pose.obj-4da3365a12d66fed1e0fca2007ac3f5a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
