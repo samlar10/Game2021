@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://SyntyApocolypse/SA_Bld_Building_Damaged_02.scn" type="PackedScene" id=1]
+[ext_resource path="res://SyntyApocolypse/SA_Env_GrassSection_01.scn" type="PackedScene" id=2]
+[ext_resource path="res://SyntyApocolypse/SA_Env_ForestTile_03.scn" type="PackedScene" id=3]
+
+[node name="Test_level" type="Spatial"]
+
+[node name="SA_Bld_Building_Damaged_02" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 8, 0, -14 )
+
+[node name="SA_Env_GrassSection_01" parent="." instance=ExtResource( 2 )]
+
+[node name="SA_Env_GrassSection_02" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 15 )
+
+[node name="SA_Env_GrassSection_03" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 15 )
+
+[node name="SA_Env_GrassSection_04" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 0 )
+
+[node name="SA_Env_GrassSection_07" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, -15 )
+
+[node name="SA_Env_GrassSection_08" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, -15 )
+
+[node name="SA_Env_GrassSection_09" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 30 )
+
+[node name="SA_Env_GrassSection_10" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 30 )
+
+[node name="SA_Env_GrassSection_05" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 15 )
+
+[node name="SA_Env_GrassSection_06" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 0 )
+
+[node name="SA_Env_GrassSection_12" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 0 )
+
+[node name="SA_Env_GrassSection_13" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, -15 )
+
+[node name="SA_Env_GrassSection_14" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 15 )
+
+[node name="SA_Env_GrassSection_15" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 30 )
+
+[node name="SA_Env_GrassSection_16" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, -15 )
+
+[node name="SA_Env_ForestTile_03" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.2108e-15, 15, 0, 15 )
