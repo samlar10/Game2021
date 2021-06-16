@@ -26,4 +26,14 @@ func _process(delta):
 	if ray.is_colliding():
 		if ray.get_collider().name != "Player":
 			print("Behind")
+#			overlay_obj = cont.owner.scene.objects['Overlay']
+#			made_invisible = list()
+#			for obj in [o for o in cont.owner.scene.objects if o.visible]:
+#				if obj is not pickups.get_looking_at():
+#					obj.visible = False
+#					made_invisible.append(obj)
+#					RenderToTexture.update(overlay_obj)
+#					for obj in made_invisible:
+#						obj.visible = True
+		
 		
