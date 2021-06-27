@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Veh_Troopcar.obj-6ebd224d4bb342699ed22b66a7892350.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Veh_Troopcar.obj-6ebd224d4bb342699ed22b66a7892350.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Veh_Troopcar.obj"
+dest_files=[ "res://.import/SA_Veh_Troopcar.obj-6ebd224d4bb342699ed22b66a7892350.mesh", "res://.import/SA_Veh_Troopcar.obj-6ebd224d4bb342699ed22b66a7892350.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

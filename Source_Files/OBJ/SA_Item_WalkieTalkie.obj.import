@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Item_WalkieTalkie.obj-2b24313a282a30ecb79627688a13f96b.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Item_WalkieTalkie.obj-2b24313a282a30ecb79627688a13f96b.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Item_WalkieTalkie.obj"
+dest_files=[ "res://.import/SA_Item_WalkieTalkie.obj-2b24313a282a30ecb79627688a13f96b.mesh", "res://.import/SA_Item_WalkieTalkie.obj-2b24313a282a30ecb79627688a13f96b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

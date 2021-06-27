@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BurntBody_Sitting.obj-e5999ee0d99c4a5797805f5a5f5f6bd8.mesh"
+
+[deps]
+
+files=[ "res://.import/BurntBody_Sitting.obj-e5999ee0d99c4a5797805f5a5f5f6bd8.mesh" ]
+
+source_file="res://Source_Files/OBJ/BurntBody_Sitting.obj"
+dest_files=[ "res://.import/BurntBody_Sitting.obj-e5999ee0d99c4a5797805f5a5f5f6bd8.mesh", "res://.import/BurntBody_Sitting.obj-e5999ee0d99c4a5797805f5a5f5f6bd8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

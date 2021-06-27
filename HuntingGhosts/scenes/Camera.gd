@@ -22,6 +22,7 @@ func _process(delta):
 	camera_pos.z = player_follow.translation.z +4 + camera_shake.y
 	camera_pos.y = get_translation().y
 	set_translation(camera_pos)
+	look_at(player_follow.translation,Vector3.UP)
 	
 	if ray.is_colliding():
 		if ray.get_collider().name != "Player":

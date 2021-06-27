@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Item_Candles.obj-61f4c21ba9e2445e925331a4a872aeef.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Item_Candles.obj-61f4c21ba9e2445e925331a4a872aeef.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Item_Candles.obj"
+dest_files=[ "res://.import/SA_Item_Candles.obj-61f4c21ba9e2445e925331a4a872aeef.mesh", "res://.import/SA_Item_Candles.obj-61f4c21ba9e2445e925331a4a872aeef.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

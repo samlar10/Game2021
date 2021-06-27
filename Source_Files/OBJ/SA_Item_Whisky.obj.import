@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Item_Whisky.obj-22b07a2da3b296f7ec01a031301d3a03.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Item_Whisky.obj-22b07a2da3b296f7ec01a031301d3a03.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Item_Whisky.obj"
+dest_files=[ "res://.import/SA_Item_Whisky.obj-22b07a2da3b296f7ec01a031301d3a03.mesh", "res://.import/SA_Item_Whisky.obj-22b07a2da3b296f7ec01a031301d3a03.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BuildingDressing_05.obj-c63ebddd52d804f861fd959b5e05d677.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BuildingDressing_05.obj-c63ebddd52d804f861fd959b5e05d677.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BuildingDressing_05.obj"
+dest_files=[ "res://.import/SA_Prop_BuildingDressing_05.obj-c63ebddd52d804f861fd959b5e05d677.mesh", "res://.import/SA_Prop_BuildingDressing_05.obj-c63ebddd52d804f861fd959b5e05d677.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

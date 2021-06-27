@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Item_CannedFood_02.obj-28effd0c6d907eed2720b6436ecd4ab6.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Item_CannedFood_02.obj-28effd0c6d907eed2720b6436ecd4ab6.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Item_CannedFood_02.obj"
+dest_files=[ "res://.import/SA_Item_CannedFood_02.obj-28effd0c6d907eed2720b6436ecd4ab6.mesh", "res://.import/SA_Item_CannedFood_02.obj-28effd0c6d907eed2720b6436ecd4ab6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

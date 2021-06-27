@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_Dumpster_Ramp_03.obj-5d498f561dad8680c22c4d5eaa5bc669.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_Dumpster_Ramp_03.obj-5d498f561dad8680c22c4d5eaa5bc669.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_Dumpster_Ramp_03.obj"
+dest_files=[ "res://.import/SA_Prop_Dumpster_Ramp_03.obj-5d498f561dad8680c22c4d5eaa5bc669.mesh", "res://.import/SA_Prop_Dumpster_Ramp_03.obj-5d498f561dad8680c22c4d5eaa5bc669.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

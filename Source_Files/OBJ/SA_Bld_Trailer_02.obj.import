@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Bld_Trailer_02.obj-f78802e05ac06b51d5abc62e17f1c44e.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Bld_Trailer_02.obj-f78802e05ac06b51d5abc62e17f1c44e.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Bld_Trailer_02.obj"
+dest_files=[ "res://.import/SA_Bld_Trailer_02.obj-f78802e05ac06b51d5abc62e17f1c44e.mesh", "res://.import/SA_Bld_Trailer_02.obj-f78802e05ac06b51d5abc62e17f1c44e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

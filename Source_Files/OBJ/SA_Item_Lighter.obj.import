@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Item_Lighter.obj-635ef9f2f8fb5dd8a5d272b2f1fc0441.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Item_Lighter.obj-635ef9f2f8fb5dd8a5d272b2f1fc0441.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Item_Lighter.obj"
+dest_files=[ "res://.import/SA_Item_Lighter.obj-635ef9f2f8fb5dd8a5d272b2f1fc0441.mesh", "res://.import/SA_Item_Lighter.obj-635ef9f2f8fb5dd8a5d272b2f1fc0441.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

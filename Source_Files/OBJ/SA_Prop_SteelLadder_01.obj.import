@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_SteelLadder_01.obj-3897bb07780241c8b80d94077b92cd08.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_SteelLadder_01.obj-3897bb07780241c8b80d94077b92cd08.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_SteelLadder_01.obj"
+dest_files=[ "res://.import/SA_Prop_SteelLadder_01.obj-3897bb07780241c8b80d94077b92cd08.mesh", "res://.import/SA_Prop_SteelLadder_01.obj-3897bb07780241c8b80d94077b92cd08.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

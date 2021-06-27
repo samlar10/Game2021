@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Veh_Clean_Watertruck.obj-dea595999add7ae1eda86a6b440087af.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Veh_Clean_Watertruck.obj-dea595999add7ae1eda86a6b440087af.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Veh_Clean_Watertruck.obj"
+dest_files=[ "res://.import/SA_Veh_Clean_Watertruck.obj-dea595999add7ae1eda86a6b440087af.mesh", "res://.import/SA_Veh_Clean_Watertruck.obj-dea595999add7ae1eda86a6b440087af.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

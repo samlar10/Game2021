@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BeerKeg_01.obj-f562972617f3f9b2c0af569e8a9f236b.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BeerKeg_01.obj-f562972617f3f9b2c0af569e8a9f236b.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BeerKeg_01.obj"
+dest_files=[ "res://.import/SA_Prop_BeerKeg_01.obj-f562972617f3f9b2c0af569e8a9f236b.mesh", "res://.import/SA_Prop_BeerKeg_01.obj-f562972617f3f9b2c0af569e8a9f236b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

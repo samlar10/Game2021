@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BBQ_01.obj-412c719d8b301ff63f4f83d666e8870a.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BBQ_01.obj-412c719d8b301ff63f4f83d666e8870a.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BBQ_01.obj"
+dest_files=[ "res://.import/SA_Prop_BBQ_01.obj-412c719d8b301ff63f4f83d666e8870a.mesh", "res://.import/SA_Prop_BBQ_01.obj-412c719d8b301ff63f4f83d666e8870a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

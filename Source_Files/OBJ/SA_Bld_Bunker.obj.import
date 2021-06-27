@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Bld_Bunker.obj-9441cacdaf013f6e99dc035e3727380e.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Bld_Bunker.obj-9441cacdaf013f6e99dc035e3727380e.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Bld_Bunker.obj"
+dest_files=[ "res://.import/SA_Bld_Bunker.obj-9441cacdaf013f6e99dc035e3727380e.mesh", "res://.import/SA_Bld_Bunker.obj-9441cacdaf013f6e99dc035e3727380e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

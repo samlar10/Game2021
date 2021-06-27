@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_DynamiteStick.obj-3f30768a5ca56620068a4306f07d5bef.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_DynamiteStick.obj-3f30768a5ca56620068a4306f07d5bef.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_DynamiteStick.obj"
+dest_files=[ "res://.import/SA_Wep_DynamiteStick.obj-3f30768a5ca56620068a4306f07d5bef.mesh", "res://.import/SA_Wep_DynamiteStick.obj-3f30768a5ca56620068a4306f07d5bef.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

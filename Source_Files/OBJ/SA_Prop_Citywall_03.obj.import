@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_Citywall_03.obj-6c88327c6594f22e1c82c56c5e30d0db.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_Citywall_03.obj-6c88327c6594f22e1c82c56c5e30d0db.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_Citywall_03.obj"
+dest_files=[ "res://.import/SA_Prop_Citywall_03.obj-6c88327c6594f22e1c82c56c5e30d0db.mesh", "res://.import/SA_Prop_Citywall_03.obj-6c88327c6594f22e1c82c56c5e30d0db.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

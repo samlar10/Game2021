@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_StepLadder_01.obj-052d208f82cd5638b7667797253c8390.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_StepLadder_01.obj-052d208f82cd5638b7667797253c8390.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_StepLadder_01.obj"
+dest_files=[ "res://.import/SA_Prop_StepLadder_01.obj-052d208f82cd5638b7667797253c8390.mesh", "res://.import/SA_Prop_StepLadder_01.obj-052d208f82cd5638b7667797253c8390.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

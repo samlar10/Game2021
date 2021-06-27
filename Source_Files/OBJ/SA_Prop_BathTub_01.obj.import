@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BathTub_01.obj-45b51a3fc6fc23a72bd7d8c87fc92862.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BathTub_01.obj-45b51a3fc6fc23a72bd7d8c87fc92862.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BathTub_01.obj"
+dest_files=[ "res://.import/SA_Prop_BathTub_01.obj-45b51a3fc6fc23a72bd7d8c87fc92862.mesh", "res://.import/SA_Prop_BathTub_01.obj-45b51a3fc6fc23a72bd7d8c87fc92862.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

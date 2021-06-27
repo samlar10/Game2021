@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BurntBlack_RV_01.obj-f9e9f590fac04e96dd7cbcec77da0517.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BurntBlack_RV_01.obj-f9e9f590fac04e96dd7cbcec77da0517.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BurntBlack_RV_01.obj"
+dest_files=[ "res://.import/SA_Prop_BurntBlack_RV_01.obj-f9e9f590fac04e96dd7cbcec77da0517.mesh", "res://.import/SA_Prop_BurntBlack_RV_01.obj-f9e9f590fac04e96dd7cbcec77da0517.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

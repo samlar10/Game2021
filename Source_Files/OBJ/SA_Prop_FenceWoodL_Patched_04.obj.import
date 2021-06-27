@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_FenceWoodL_Patched_04.obj-ec26aa2eaca872d53ff051b7ede7f97b.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_FenceWoodL_Patched_04.obj-ec26aa2eaca872d53ff051b7ede7f97b.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_FenceWoodL_Patched_04.obj"
+dest_files=[ "res://.import/SA_Prop_FenceWoodL_Patched_04.obj-ec26aa2eaca872d53ff051b7ede7f97b.mesh", "res://.import/SA_Prop_FenceWoodL_Patched_04.obj-ec26aa2eaca872d53ff051b7ede7f97b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

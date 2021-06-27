@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_Sleepingbag_Open_01.obj-91ff3258c7387533cff50b5d6ab819b2.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_Sleepingbag_Open_01.obj-91ff3258c7387533cff50b5d6ab819b2.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_Sleepingbag_Open_01.obj"
+dest_files=[ "res://.import/SA_Prop_Sleepingbag_Open_01.obj-91ff3258c7387533cff50b5d6ab819b2.mesh", "res://.import/SA_Prop_Sleepingbag_Open_01.obj-91ff3258c7387533cff50b5d6ab819b2.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

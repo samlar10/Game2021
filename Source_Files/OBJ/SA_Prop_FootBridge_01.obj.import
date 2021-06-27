@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_FootBridge_01.obj-75d8b43887cc0a4735e72f8e7d8d736d.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_FootBridge_01.obj-75d8b43887cc0a4735e72f8e7d8d736d.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_FootBridge_01.obj"
+dest_files=[ "res://.import/SA_Prop_FootBridge_01.obj-75d8b43887cc0a4735e72f8e7d8d736d.mesh", "res://.import/SA_Prop_FootBridge_01.obj-75d8b43887cc0a4735e72f8e7d8d736d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

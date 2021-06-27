@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_NailPlank.obj-b61bdd6b4f0a8670aaa29b2440c76e04.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_NailPlank.obj-b61bdd6b4f0a8670aaa29b2440c76e04.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_NailPlank.obj"
+dest_files=[ "res://.import/SA_Wep_NailPlank.obj-b61bdd6b4f0a8670aaa29b2440c76e04.mesh", "res://.import/SA_Wep_NailPlank.obj-b61bdd6b4f0a8670aaa29b2440c76e04.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Env_RoadStraight_Damaged_06.obj-7f0291074a46e5e362bf8ec204044646.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Env_RoadStraight_Damaged_06.obj-7f0291074a46e5e362bf8ec204044646.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Env_RoadStraight_Damaged_06.obj"
+dest_files=[ "res://.import/SA_Env_RoadStraight_Damaged_06.obj-7f0291074a46e5e362bf8ec204044646.mesh", "res://.import/SA_Env_RoadStraight_Damaged_06.obj-7f0291074a46e5e362bf8ec204044646.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

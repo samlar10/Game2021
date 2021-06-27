@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_JunkPile_03.obj-d58b6bb2e5caab7902104fa6a844197b.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_JunkPile_03.obj-d58b6bb2e5caab7902104fa6a844197b.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_JunkPile_03.obj"
+dest_files=[ "res://.import/SA_Prop_JunkPile_03.obj-d58b6bb2e5caab7902104fa6a844197b.mesh", "res://.import/SA_Prop_JunkPile_03.obj-d58b6bb2e5caab7902104fa6a844197b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

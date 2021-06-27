@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_LawnFlamingo_01.obj-f5d3825da6a4ba6cf7743fc6c6a446e7.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_LawnFlamingo_01.obj-f5d3825da6a4ba6cf7743fc6c6a446e7.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_LawnFlamingo_01.obj"
+dest_files=[ "res://.import/SA_Prop_LawnFlamingo_01.obj-f5d3825da6a4ba6cf7743fc6c6a446e7.mesh", "res://.import/SA_Prop_LawnFlamingo_01.obj-f5d3825da6a4ba6cf7743fc6c6a446e7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

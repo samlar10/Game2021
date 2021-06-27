@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_Van_Destroyed_01.obj-8f7fd8fe1baaef8553dfdc364fa12fac.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_Van_Destroyed_01.obj-8f7fd8fe1baaef8553dfdc364fa12fac.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_Van_Destroyed_01.obj"
+dest_files=[ "res://.import/SA_Prop_Van_Destroyed_01.obj-8f7fd8fe1baaef8553dfdc364fa12fac.mesh", "res://.import/SA_Prop_Van_Destroyed_01.obj-8f7fd8fe1baaef8553dfdc364fa12fac.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

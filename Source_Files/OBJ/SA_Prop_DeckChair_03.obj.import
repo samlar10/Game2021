@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_DeckChair_03.obj-4f40d3f1e5cee59b7c1934ad69bf5870.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_DeckChair_03.obj-4f40d3f1e5cee59b7c1934ad69bf5870.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_DeckChair_03.obj"
+dest_files=[ "res://.import/SA_Prop_DeckChair_03.obj-4f40d3f1e5cee59b7c1934ad69bf5870.mesh", "res://.import/SA_Prop_DeckChair_03.obj-4f40d3f1e5cee59b7c1934ad69bf5870.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

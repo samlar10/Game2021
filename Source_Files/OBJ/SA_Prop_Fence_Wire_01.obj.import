@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_Fence_Wire_01.obj-23488907ce6b431296c69bed39699dfb.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_Fence_Wire_01.obj-23488907ce6b431296c69bed39699dfb.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_Fence_Wire_01.obj"
+dest_files=[ "res://.import/SA_Prop_Fence_Wire_01.obj-23488907ce6b431296c69bed39699dfb.mesh", "res://.import/SA_Prop_Fence_Wire_01.obj-23488907ce6b431296c69bed39699dfb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

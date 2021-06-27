@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_TirePile_01.obj-b9410ffad4a5e83b21d825f8c8fa2d13.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_TirePile_01.obj-b9410ffad4a5e83b21d825f8c8fa2d13.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_TirePile_01.obj"
+dest_files=[ "res://.import/SA_Prop_TirePile_01.obj-b9410ffad4a5e83b21d825f8c8fa2d13.mesh", "res://.import/SA_Prop_TirePile_01.obj-b9410ffad4a5e83b21d825f8c8fa2d13.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

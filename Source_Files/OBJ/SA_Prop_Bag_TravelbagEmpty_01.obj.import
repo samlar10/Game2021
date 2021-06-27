@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_Bag_TravelbagEmpty_01.obj-5e92ca3a742f2209ddcb172aff4d8e58.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_Bag_TravelbagEmpty_01.obj-5e92ca3a742f2209ddcb172aff4d8e58.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_Bag_TravelbagEmpty_01.obj"
+dest_files=[ "res://.import/SA_Prop_Bag_TravelbagEmpty_01.obj-5e92ca3a742f2209ddcb172aff4d8e58.mesh", "res://.import/SA_Prop_Bag_TravelbagEmpty_01.obj-5e92ca3a742f2209ddcb172aff4d8e58.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

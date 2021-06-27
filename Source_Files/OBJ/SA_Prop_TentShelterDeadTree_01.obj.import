@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_TentShelterDeadTree_01.obj-94a65a86d68fe2e7c1a7ad6d5bdfe157.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_TentShelterDeadTree_01.obj-94a65a86d68fe2e7c1a7ad6d5bdfe157.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_TentShelterDeadTree_01.obj"
+dest_files=[ "res://.import/SA_Prop_TentShelterDeadTree_01.obj-94a65a86d68fe2e7c1a7ad6d5bdfe157.mesh", "res://.import/SA_Prop_TentShelterDeadTree_01.obj-94a65a86d68fe2e7c1a7ad6d5bdfe157.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

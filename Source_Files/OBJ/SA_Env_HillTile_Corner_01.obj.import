@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Env_HillTile_Corner_01.obj-778eaa315e6d226c75e81e084e7d8af0.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Env_HillTile_Corner_01.obj-778eaa315e6d226c75e81e084e7d8af0.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Env_HillTile_Corner_01.obj"
+dest_files=[ "res://.import/SA_Env_HillTile_Corner_01.obj-778eaa315e6d226c75e81e084e7d8af0.mesh", "res://.import/SA_Env_HillTile_Corner_01.obj-778eaa315e6d226c75e81e084e7d8af0.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

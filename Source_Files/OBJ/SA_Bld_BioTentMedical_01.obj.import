@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Bld_BioTentMedical_01.obj-2ea6011066725f3187e6bdb81f0e3394.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Bld_BioTentMedical_01.obj-2ea6011066725f3187e6bdb81f0e3394.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Bld_BioTentMedical_01.obj"
+dest_files=[ "res://.import/SA_Bld_BioTentMedical_01.obj-2ea6011066725f3187e6bdb81f0e3394.mesh", "res://.import/SA_Bld_BioTentMedical_01.obj-2ea6011066725f3187e6bdb81f0e3394.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

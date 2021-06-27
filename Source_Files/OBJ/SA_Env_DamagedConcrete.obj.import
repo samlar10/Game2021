@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Env_DamagedConcrete.obj-dd76cabaab3f380886694f82744642dd.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Env_DamagedConcrete.obj-dd76cabaab3f380886694f82744642dd.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Env_DamagedConcrete.obj"
+dest_files=[ "res://.import/SA_Env_DamagedConcrete.obj-dd76cabaab3f380886694f82744642dd.mesh", "res://.import/SA_Env_DamagedConcrete.obj-dd76cabaab3f380886694f82744642dd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

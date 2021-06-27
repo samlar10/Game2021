@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_GuardTower_01.obj-3624a293ea348c1a7ade8bbf924e27f6.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_GuardTower_01.obj-3624a293ea348c1a7ade8bbf924e27f6.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_GuardTower_01.obj"
+dest_files=[ "res://.import/SA_Prop_GuardTower_01.obj-3624a293ea348c1a7ade8bbf924e27f6.mesh", "res://.import/SA_Prop_GuardTower_01.obj-3624a293ea348c1a7ade8bbf924e27f6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

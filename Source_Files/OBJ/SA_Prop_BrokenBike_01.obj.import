@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BrokenBike_01.obj-a9dd504b9df94ec7ffc9f1a3776b02cb.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BrokenBike_01.obj-a9dd504b9df94ec7ffc9f1a3776b02cb.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BrokenBike_01.obj"
+dest_files=[ "res://.import/SA_Prop_BrokenBike_01.obj-a9dd504b9df94ec7ffc9f1a3776b02cb.mesh", "res://.import/SA_Prop_BrokenBike_01.obj-a9dd504b9df94ec7ffc9f1a3776b02cb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

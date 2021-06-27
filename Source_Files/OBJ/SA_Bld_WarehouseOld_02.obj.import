@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Bld_WarehouseOld_02.obj-8ead2e4188cb0d27456e6cc59dbc1d24.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Bld_WarehouseOld_02.obj-8ead2e4188cb0d27456e6cc59dbc1d24.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Bld_WarehouseOld_02.obj"
+dest_files=[ "res://.import/SA_Bld_WarehouseOld_02.obj-8ead2e4188cb0d27456e6cc59dbc1d24.mesh", "res://.import/SA_Bld_WarehouseOld_02.obj-8ead2e4188cb0d27456e6cc59dbc1d24.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

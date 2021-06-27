@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Item_Lantern.obj-e2b8e8e95e28be00b1b6f8e5df26a142.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Item_Lantern.obj-e2b8e8e95e28be00b1b6f8e5df26a142.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Item_Lantern.obj"
+dest_files=[ "res://.import/SA_Item_Lantern.obj-e2b8e8e95e28be00b1b6f8e5df26a142.mesh", "res://.import/SA_Item_Lantern.obj-e2b8e8e95e28be00b1b6f8e5df26a142.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

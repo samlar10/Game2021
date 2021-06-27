@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Env_ForestTile_01.obj-8875da17e2c289dd3d47fe1c306290df.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Env_ForestTile_01.obj-8875da17e2c289dd3d47fe1c306290df.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Env_ForestTile_01.obj"
+dest_files=[ "res://.import/SA_Env_ForestTile_01.obj-8875da17e2c289dd3d47fe1c306290df.mesh", "res://.import/SA_Env_ForestTile_01.obj-8875da17e2c289dd3d47fe1c306290df.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

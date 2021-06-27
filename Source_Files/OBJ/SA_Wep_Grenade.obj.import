@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_Grenade.obj-463857a3e7caaf863a9ed8a460a76243.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_Grenade.obj-463857a3e7caaf863a9ed8a460a76243.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_Grenade.obj"
+dest_files=[ "res://.import/SA_Wep_Grenade.obj-463857a3e7caaf863a9ed8a460a76243.mesh", "res://.import/SA_Wep_Grenade.obj-463857a3e7caaf863a9ed8a460a76243.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

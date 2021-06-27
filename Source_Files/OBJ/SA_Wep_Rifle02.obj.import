@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_Rifle02.obj-265cc84c2c9033c309f23992fb83d143.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_Rifle02.obj-265cc84c2c9033c309f23992fb83d143.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_Rifle02.obj"
+dest_files=[ "res://.import/SA_Wep_Rifle02.obj-265cc84c2c9033c309f23992fb83d143.mesh", "res://.import/SA_Wep_Rifle02.obj-265cc84c2c9033c309f23992fb83d143.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

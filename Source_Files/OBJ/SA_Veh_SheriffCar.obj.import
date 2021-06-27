@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Veh_SheriffCar.obj-8415bb0f7275c9afe0c9c9ab3303d99f.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Veh_SheriffCar.obj-8415bb0f7275c9afe0c9c9ab3303d99f.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Veh_SheriffCar.obj"
+dest_files=[ "res://.import/SA_Veh_SheriffCar.obj-8415bb0f7275c9afe0c9c9ab3303d99f.mesh", "res://.import/SA_Veh_SheriffCar.obj-8415bb0f7275c9afe0c9c9ab3303d99f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

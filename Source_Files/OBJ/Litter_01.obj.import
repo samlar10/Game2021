@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Litter_01.obj-4d73b91f0133ebffb31db4d2d60b5539.mesh"
+
+[deps]
+
+files=[ "res://.import/Litter_01.obj-4d73b91f0133ebffb31db4d2d60b5539.mesh" ]
+
+source_file="res://Source_Files/OBJ/Litter_01.obj"
+dest_files=[ "res://.import/Litter_01.obj-4d73b91f0133ebffb31db4d2d60b5539.mesh", "res://.import/Litter_01.obj-4d73b91f0133ebffb31db4d2d60b5539.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

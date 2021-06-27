@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Env_DirtCircle2.obj-b4792385469e012245815d42ae042983.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Env_DirtCircle2.obj-b4792385469e012245815d42ae042983.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Env_DirtCircle2.obj"
+dest_files=[ "res://.import/SA_Env_DirtCircle2.obj-b4792385469e012245815d42ae042983.mesh", "res://.import/SA_Env_DirtCircle2.obj-b4792385469e012245815d42ae042983.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

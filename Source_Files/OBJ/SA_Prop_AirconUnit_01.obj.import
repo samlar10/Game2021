@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_AirconUnit_01.obj-72e4468acc1f7ab5d4acf51316c9834a.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_AirconUnit_01.obj-72e4468acc1f7ab5d4acf51316c9834a.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_AirconUnit_01.obj"
+dest_files=[ "res://.import/SA_Prop_AirconUnit_01.obj-72e4468acc1f7ab5d4acf51316c9834a.mesh", "res://.import/SA_Prop_AirconUnit_01.obj-72e4468acc1f7ab5d4acf51316c9834a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_SpazShotgun.obj-3df8b2aaf200395709c07446d3dd47cf.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_SpazShotgun.obj-3df8b2aaf200395709c07446d3dd47cf.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_SpazShotgun.obj"
+dest_files=[ "res://.import/SA_Wep_SpazShotgun.obj-3df8b2aaf200395709c07446d3dd47cf.mesh", "res://.import/SA_Wep_SpazShotgun.obj-3df8b2aaf200395709c07446d3dd47cf.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

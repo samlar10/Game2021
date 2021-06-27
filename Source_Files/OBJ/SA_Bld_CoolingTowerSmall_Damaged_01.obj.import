@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Bld_CoolingTowerSmall_Damaged_01.obj-76512f469f2358549539d4fa58d1353d.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Bld_CoolingTowerSmall_Damaged_01.obj-76512f469f2358549539d4fa58d1353d.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Bld_CoolingTowerSmall_Damaged_01.obj"
+dest_files=[ "res://.import/SA_Bld_CoolingTowerSmall_Damaged_01.obj-76512f469f2358549539d4fa58d1353d.mesh", "res://.import/SA_Bld_CoolingTowerSmall_Damaged_01.obj-76512f469f2358549539d4fa58d1353d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

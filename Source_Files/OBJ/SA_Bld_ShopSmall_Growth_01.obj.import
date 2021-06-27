@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Bld_ShopSmall_Growth_01.obj-14ebdbc6469383c683be9c4742720015.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Bld_ShopSmall_Growth_01.obj-14ebdbc6469383c683be9c4742720015.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Bld_ShopSmall_Growth_01.obj"
+dest_files=[ "res://.import/SA_Bld_ShopSmall_Growth_01.obj-14ebdbc6469383c683be9c4742720015.mesh", "res://.import/SA_Bld_ShopSmall_Growth_01.obj-14ebdbc6469383c683be9c4742720015.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

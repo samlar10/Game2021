@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Item_RoadFlareBundle.obj-6e8bc439347cb891d2d1445b59bd0295.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Item_RoadFlareBundle.obj-6e8bc439347cb891d2d1445b59bd0295.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Item_RoadFlareBundle.obj"
+dest_files=[ "res://.import/SA_Item_RoadFlareBundle.obj-6e8bc439347cb891d2d1445b59bd0295.mesh", "res://.import/SA_Item_RoadFlareBundle.obj-6e8bc439347cb891d2d1445b59bd0295.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

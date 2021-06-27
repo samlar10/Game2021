@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_AmmoPile_L_02.obj-488ea8ec3a792eb7b74c1c2140fe513d.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_AmmoPile_L_02.obj-488ea8ec3a792eb7b74c1c2140fe513d.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_AmmoPile_L_02.obj"
+dest_files=[ "res://.import/SA_Prop_AmmoPile_L_02.obj-488ea8ec3a792eb7b74c1c2140fe513d.mesh", "res://.import/SA_Prop_AmmoPile_L_02.obj-488ea8ec3a792eb7b74c1c2140fe513d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BioBarrel_02.obj-9c5b1a6b7719a4628386e1c55cec5ef3.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BioBarrel_02.obj-9c5b1a6b7719a4628386e1c55cec5ef3.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BioBarrel_02.obj"
+dest_files=[ "res://.import/SA_Prop_BioBarrel_02.obj-9c5b1a6b7719a4628386e1c55cec5ef3.mesh", "res://.import/SA_Prop_BioBarrel_02.obj-9c5b1a6b7719a4628386e1c55cec5ef3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

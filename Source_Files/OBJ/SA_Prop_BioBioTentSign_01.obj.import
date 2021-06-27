@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BioBioTentSign_01.obj-9f1eb5050ca4c8551e8dc9ddbeff7fce.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BioBioTentSign_01.obj-9f1eb5050ca4c8551e8dc9ddbeff7fce.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BioBioTentSign_01.obj"
+dest_files=[ "res://.import/SA_Prop_BioBioTentSign_01.obj-9f1eb5050ca4c8551e8dc9ddbeff7fce.mesh", "res://.import/SA_Prop_BioBioTentSign_01.obj-9f1eb5050ca4c8551e8dc9ddbeff7fce.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

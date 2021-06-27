@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_Mattress_02.obj-96906d1492e61338c4371f0b9602799a.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_Mattress_02.obj-96906d1492e61338c4371f0b9602799a.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_Mattress_02.obj"
+dest_files=[ "res://.import/SA_Prop_Mattress_02.obj-96906d1492e61338c4371f0b9602799a.mesh", "res://.import/SA_Prop_Mattress_02.obj-96906d1492e61338c4371f0b9602799a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

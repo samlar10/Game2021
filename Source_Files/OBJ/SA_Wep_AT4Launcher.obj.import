@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_AT4Launcher.obj-f40ec0e75f9178f3514931957fe10595.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_AT4Launcher.obj-f40ec0e75f9178f3514931957fe10595.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_AT4Launcher.obj"
+dest_files=[ "res://.import/SA_Wep_AT4Launcher.obj-f40ec0e75f9178f3514931957fe10595.mesh", "res://.import/SA_Wep_AT4Launcher.obj-f40ec0e75f9178f3514931957fe10595.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

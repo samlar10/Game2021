@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Env_Blood_01.obj-2fe2e60dbd72b819f411db43d820376f.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Env_Blood_01.obj-2fe2e60dbd72b819f411db43d820376f.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Env_Blood_01.obj"
+dest_files=[ "res://.import/SA_Env_Blood_01.obj-2fe2e60dbd72b819f411db43d820376f.mesh", "res://.import/SA_Env_Blood_01.obj-2fe2e60dbd72b819f411db43d820376f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

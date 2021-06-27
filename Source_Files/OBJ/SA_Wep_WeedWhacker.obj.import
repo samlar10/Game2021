@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_WeedWhacker.obj-a796483810fbd7f2d5c37f3a54a8536d.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_WeedWhacker.obj-a796483810fbd7f2d5c37f3a54a8536d.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_WeedWhacker.obj"
+dest_files=[ "res://.import/SA_Wep_WeedWhacker.obj-a796483810fbd7f2d5c37f3a54a8536d.mesh", "res://.import/SA_Wep_WeedWhacker.obj-a796483810fbd7f2d5c37f3a54a8536d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -18,6 +18,10 @@ config/name="HuntingGhosts"
 run/main_scene="res://scenes/World.tscn"
 config/icon="res://icon.png"
 
+[global]
+
+world=false
+
 [input]
 
 ui_left={

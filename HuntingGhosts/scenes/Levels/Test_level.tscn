@@ -1,25 +1,32 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://SyntyApocolypse/SA_Bld_Building_Damaged_02.scn" type="PackedScene" id=1]
 [ext_resource path="res://SyntyApocolypse/SA_Env_GrassSection_01.scn" type="PackedScene" id=2]
 [ext_resource path="res://SyntyApocolypse/SA_Env_ForestTile_03.scn" type="PackedScene" id=3]
 [ext_resource path="res://SyntyApocolypse/SA_Bld_BurntHouse_01.scn" type="PackedScene" id=4]
+[ext_resource path="res://SyntyApocolypse/SA_Env_HillTile_Corner_02.scn" type="PackedScene" id=5]
+[ext_resource path="res://SyntyApocolypse/SA_Bld_PowerLineLarge_01.scn" type="PackedScene" id=6]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Highway_Broken_04.scn" type="PackedScene" id=7]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Road_StraightLarge_01.scn" type="PackedScene" id=8]
+[ext_resource path="res://SyntyApocolypse/SA_Env_HillTile_Corner_01.scn" type="PackedScene" id=9]
+[ext_resource path="res://SyntyApocolypse/SA_Env_HillTile_Ramp_01.scn" type="PackedScene" id=10]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Highway_Broken_01.scn" type="PackedScene" id=11]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Highway_Broken_02.scn" type="PackedScene" id=12]
+[ext_resource path="res://SyntyApocolypse/SA_Env_HillTile_01.scn" type="PackedScene" id=13]
+[ext_resource path="res://SyntyApocolypse/SA_Bld_PowerLineLarge_Defended_01.scn" type="PackedScene" id=14]
 
 [node name="Test_level" type="Spatial"]
 
 [node name="SA_Bld_Building_Damaged_02" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 8, 0, -13 )
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 14, 0, -14 )
 
 [node name="SA_Env_GrassSection_01" parent="." instance=ExtResource( 2 )]
 
 [node name="SA_Env_GrassSection_02" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 15 )
 
-[node name="SA_Env_GrassSection_03" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 15 )
-
 [node name="SA_Env_GrassSection_04" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 0 )
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, -2 )
 
 [node name="SA_Env_GrassSection_07" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, -15 )
@@ -31,13 +38,10 @@ transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0,
 transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 30 )
 
 [node name="SA_Env_GrassSection_10" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 30 )
-
-[node name="SA_Env_GrassSection_05" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 15 )
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 33 )
 
 [node name="SA_Env_GrassSection_06" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 0 )
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, -2 )
 
 [node name="SA_Env_GrassSection_12" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 0 )
@@ -49,13 +53,208 @@ transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 
 transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 15 )
 
 [node name="SA_Env_GrassSection_15" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 30 )
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 33 )
 
 [node name="SA_Env_GrassSection_16" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, -15 )
+
+[node name="SA_Env_GrassSection_61" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 60 )
+
+[node name="SA_Env_GrassSection_62" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 75 )
+
+[node name="SA_Env_GrassSection_63" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 75 )
+
+[node name="SA_Env_GrassSection_64" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 60 )
+
+[node name="SA_Env_GrassSection_65" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 45 )
+
+[node name="SA_Env_GrassSection_66" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 45 )
+
+[node name="SA_Env_GrassSection_67" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 0, 0, 90 )
+
+[node name="SA_Env_GrassSection_68" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -15, 0, 90 )
+
+[node name="SA_Env_GrassSection_69" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 75 )
+
+[node name="SA_Env_GrassSection_70" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 60 )
+
+[node name="SA_Env_GrassSection_71" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 60 )
+
+[node name="SA_Env_GrassSection_72" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 45 )
+
+[node name="SA_Env_GrassSection_73" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 75 )
+
+[node name="SA_Env_GrassSection_74" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 90 )
+
+[node name="SA_Env_GrassSection_75" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 45 )
+
+[node name="SA_Env_GrassSection_31" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 0, 60 )
+
+[node name="SA_Env_GrassSection_32" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 0, 75 )
+
+[node name="SA_Env_GrassSection_33" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 0, 75 )
+
+[node name="SA_Env_GrassSection_34" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 0, 60 )
+
+[node name="SA_Env_GrassSection_37" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 0, 90 )
+
+[node name="SA_Env_GrassSection_38" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 0, 90 )
+
+[node name="SA_Env_GrassSection_39" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -90, 0, 75 )
+
+[node name="SA_Env_GrassSection_41" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -45, 0, 60 )
+
+[node name="SA_Env_GrassSection_43" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -45, 0, 75 )
+
+[node name="SA_Env_GrassSection_44" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -90, 0, 90 )
+
+[node name="SA_Env_GrassSection_46" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 0, 60 )
+
+[node name="SA_Env_GrassSection_50" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 3.52281, 30 )
+
+[node name="SA_Env_GrassSection_51" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 3.52281, 30 )
+
+[node name="SA_Env_GrassSection_55" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 3.52281, 15 )
+
+[node name="SA_Env_GrassSection_60" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 3.52281, 0 )
+
+[node name="SA_Env_GrassSection_79" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 3.52281, 0 )
+
+[node name="SA_Env_GrassSection_57" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 3.52281, 15 )
+
+[node name="SA_Env_GrassSection_47" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 0, 75 )
+
+[node name="SA_Env_GrassSection_48" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 0, 75 )
+
+[node name="SA_Env_GrassSection_49" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 0, 60 )
+
+[node name="SA_Env_GrassSection_52" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 0, 90 )
+
+[node name="SA_Env_GrassSection_76" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -45, 0, 90 )
+
+[node name="SA_Env_GrassSection_77" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 90 )
+
+[node name="SA_Env_GrassSection_78" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, 90 )
+
+[node name="SA_Env_GrassSection_53" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 0, 90 )
+
+[node name="SA_Env_GrassSection_54" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -90, 0, 75 )
+
+[node name="SA_Env_GrassSection_56" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -45, 0, 60 )
+
+[node name="SA_Env_GrassSection_58" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -45, 0, 75 )
+
+[node name="SA_Env_GrassSection_59" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -90, 0, 90 )
 
 [node name="SA_Env_ForestTile_03" parent="." instance=ExtResource( 3 )]
 transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.2108e-15, 15, 0, 15 )
 
 [node name="SA_Bld_BurntHouse_01" parent="." instance=ExtResource( 4 )]
-transform = Transform( -0.5, 0.866025, -1.03238e-07, 0, -1.19209e-07, -1, -0.866025, -0.5, 5.96047e-08, -18, 0, -10 )
+transform = Transform( -0.258819, 0.965925, -4.2222e-08, 0, -4.37114e-08, -1, -0.965925, -0.258819, 1.13134e-08, -17, 0, -13 )
+
+[node name="SA_Bld_PowerLineLarge_Defended_01" parent="." instance=ExtResource( 14 )]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -1.22183, 0, 62.7782 )
+
+[node name="SA_Bld_PowerLineLarge_01" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1.94707e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.94707e-07, -8.51092e-15, -63, 0, 63 )
+
+[node name="SA_Env_Highway_Broken_02" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 4.47035e-08, -3.55271e-15, 0, -1.19209e-07, -1, -2.98023e-08, 1, -1.19209e-07, -51, 0, 8 )
+
+[node name="SA_Env_Highway_Broken_01" parent="." instance=ExtResource( 11 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -51, 0, 8 )
+
+[node name="SA_Env_Highway_Broken_04" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -70, 0, 7 )
+
+[node name="SA_Env_Road_StraightLarge_01" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -30, 0, 18 )
+
+[node name="SA_Env_HillTile_01" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -75, 0, 45 )
+
+[node name="SA_Env_HillTile_02" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -60, 0, 45 )
+
+[node name="SA_Env_HillTile_03" parent="." instance=ExtResource( 13 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.2108e-15, -30, 0, 15 )
+
+[node name="SA_Env_HillTile_04" parent="." instance=ExtResource( 13 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.2108e-15, -30, 0, 0 )
+
+[node name="SA_Env_HillTile_05" parent="." instance=ExtResource( 13 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -45, 0, -30 )
+
+[node name="SA_Env_HillTile_06" parent="." instance=ExtResource( 13 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -60, 0, -30 )
+
+[node name="SA_Env_HillTile_07" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1.31134e-07, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.31134e-07, -1.56324e-14, -90, 0, -15 )
+
+[node name="SA_Env_HillTile_08" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1.31134e-07, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.31134e-07, -1.56324e-14, -90, 0, 0 )
+
+[node name="SA_Env_HillTile_Corner_02" parent="." instance=ExtResource( 5 )]
+transform = Transform( -5.96046e-08, 1, -1.94707e-07, 0, -1.94707e-07, -1, -1, -5.96046e-08, 7.10543e-15, -75, 0, 45 )
+
+[node name="SA_Env_HillTile_Corner_01" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.2108e-15, -75, 0, 60 )
+
+[node name="SA_Env_HillTile_Corner_03" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.2108e-15, -30, 0, 45 )
+
+[node name="SA_Env_HillTile_Ramp_01" parent="." instance=ExtResource( 10 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.2108e-15, -30, 0, 30 )
+
+[node name="SA_Env_HillTile_Corner_04" parent="." instance=ExtResource( 9 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -30, 0, -30 )
+
+[node name="SA_Env_HillTile_Corner_05" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1.31134e-07, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.31134e-07, -1.56324e-14, -90, 0, -30 )
+
+[node name="SA_Env_HillTile_Corner_06" parent="." instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.2108e-15, -90, 0, 15 )

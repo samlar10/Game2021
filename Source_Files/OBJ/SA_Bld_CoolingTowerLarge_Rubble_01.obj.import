@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Bld_CoolingTowerLarge_Rubble_01.obj-90e5e94d1c7f35ad5dfa5d03936f1480.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Bld_CoolingTowerLarge_Rubble_01.obj-90e5e94d1c7f35ad5dfa5d03936f1480.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Bld_CoolingTowerLarge_Rubble_01.obj"
+dest_files=[ "res://.import/SA_Bld_CoolingTowerLarge_Rubble_01.obj-90e5e94d1c7f35ad5dfa5d03936f1480.mesh", "res://.import/SA_Bld_CoolingTowerLarge_Rubble_01.obj-90e5e94d1c7f35ad5dfa5d03936f1480.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

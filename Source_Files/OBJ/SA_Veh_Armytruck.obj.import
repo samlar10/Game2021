@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Veh_Armytruck.obj-e42db0fed27d97e5fead1475d6ce53c7.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Veh_Armytruck.obj-e42db0fed27d97e5fead1475d6ce53c7.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Veh_Armytruck.obj"
+dest_files=[ "res://.import/SA_Veh_Armytruck.obj-e42db0fed27d97e5fead1475d6ce53c7.mesh", "res://.import/SA_Veh_Armytruck.obj-e42db0fed27d97e5fead1475d6ce53c7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

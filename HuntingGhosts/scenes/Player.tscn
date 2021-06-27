@@ -36,3 +36,13 @@ transform = Transform( -0.4, -3.49691e-08, 1.91069e-15, 0, -1.74846e-08, -0.5, 3
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.551451, 0 )
 enabled = true
 cast_to = Vector3( 0, -0.244, 0 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 8, 6 )
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0203047, 2.38419e-07, 0.257742 )
+light_energy = 16.0
+light_indirect_energy = 16.0
+spot_range = 400.2
+spot_angle = 16.1112

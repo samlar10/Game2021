@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Veh_Schoolbus.obj-f439ff60f6865aba67fcf20955e4bd86.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Veh_Schoolbus.obj-f439ff60f6865aba67fcf20955e4bd86.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Veh_Schoolbus.obj"
+dest_files=[ "res://.import/SA_Veh_Schoolbus.obj-f439ff60f6865aba67fcf20955e4bd86.mesh", "res://.import/SA_Veh_Schoolbus.obj-f439ff60f6865aba67fcf20955e4bd86.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

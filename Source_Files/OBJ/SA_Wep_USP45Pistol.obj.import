@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_USP45Pistol.obj-b1a93e3ed9c0f508b4b7bca55e679143.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_USP45Pistol.obj-b1a93e3ed9c0f508b4b7bca55e679143.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_USP45Pistol.obj"
+dest_files=[ "res://.import/SA_Wep_USP45Pistol.obj-b1a93e3ed9c0f508b4b7bca55e679143.mesh", "res://.import/SA_Wep_USP45Pistol.obj-b1a93e3ed9c0f508b4b7bca55e679143.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

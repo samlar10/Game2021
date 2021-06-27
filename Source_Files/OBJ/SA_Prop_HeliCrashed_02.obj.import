@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_HeliCrashed_02.obj-dfd73698be19ec703a2b77a293c0521b.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_HeliCrashed_02.obj-dfd73698be19ec703a2b77a293c0521b.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_HeliCrashed_02.obj"
+dest_files=[ "res://.import/SA_Prop_HeliCrashed_02.obj-dfd73698be19ec703a2b77a293c0521b.mesh", "res://.import/SA_Prop_HeliCrashed_02.obj-dfd73698be19ec703a2b77a293c0521b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Bld_HouseMedium_Damaged_01.obj-a52aaf62e389a274a92324eaac90c935.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Bld_HouseMedium_Damaged_01.obj-a52aaf62e389a274a92324eaac90c935.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Bld_HouseMedium_Damaged_01.obj"
+dest_files=[ "res://.import/SA_Bld_HouseMedium_Damaged_01.obj-a52aaf62e389a274a92324eaac90c935.mesh", "res://.import/SA_Bld_HouseMedium_Damaged_01.obj-a52aaf62e389a274a92324eaac90c935.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

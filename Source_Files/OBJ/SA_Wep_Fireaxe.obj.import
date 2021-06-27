@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_Fireaxe.obj-6328f400249cfc18fc25a32a1da41837.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_Fireaxe.obj-6328f400249cfc18fc25a32a1da41837.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_Fireaxe.obj"
+dest_files=[ "res://.import/SA_Wep_Fireaxe.obj-6328f400249cfc18fc25a32a1da41837.mesh", "res://.import/SA_Wep_Fireaxe.obj-6328f400249cfc18fc25a32a1da41837.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

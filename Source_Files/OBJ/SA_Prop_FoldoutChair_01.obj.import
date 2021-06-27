@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_FoldoutChair_01.obj-d567532030a52cec61966b7381fd1ed9.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_FoldoutChair_01.obj-d567532030a52cec61966b7381fd1ed9.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_FoldoutChair_01.obj"
+dest_files=[ "res://.import/SA_Prop_FoldoutChair_01.obj-d567532030a52cec61966b7381fd1ed9.mesh", "res://.import/SA_Prop_FoldoutChair_01.obj-d567532030a52cec61966b7381fd1ed9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

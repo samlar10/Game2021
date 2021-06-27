@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BodyBag_05.obj-56f8b53c2732b5a0692eb0a08e981aaa.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BodyBag_05.obj-56f8b53c2732b5a0692eb0a08e981aaa.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BodyBag_05.obj"
+dest_files=[ "res://.import/SA_Prop_BodyBag_05.obj-56f8b53c2732b5a0692eb0a08e981aaa.mesh", "res://.import/SA_Prop_BodyBag_05.obj-56f8b53c2732b5a0692eb0a08e981aaa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

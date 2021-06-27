@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_SpikeSmall_01.obj-8a847aab25f8b897041a346057870984.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_SpikeSmall_01.obj-8a847aab25f8b897041a346057870984.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_SpikeSmall_01.obj"
+dest_files=[ "res://.import/SA_Prop_SpikeSmall_01.obj-8a847aab25f8b897041a346057870984.mesh", "res://.import/SA_Prop_SpikeSmall_01.obj-8a847aab25f8b897041a346057870984.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

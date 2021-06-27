@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_Hammer.obj-4d65096d6587dcb63bf5094b3c976c44.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_Hammer.obj-4d65096d6587dcb63bf5094b3c976c44.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_Hammer.obj"
+dest_files=[ "res://.import/SA_Wep_Hammer.obj-4d65096d6587dcb63bf5094b3c976c44.mesh", "res://.import/SA_Wep_Hammer.obj-4d65096d6587dcb63bf5094b3c976c44.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

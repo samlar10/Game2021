@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_Paddle.obj-60eb8cffa401d1e09d8bc52a3e857fdb.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_Paddle.obj-60eb8cffa401d1e09d8bc52a3e857fdb.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_Paddle.obj"
+dest_files=[ "res://.import/SA_Wep_Paddle.obj-60eb8cffa401d1e09d8bc52a3e857fdb.mesh", "res://.import/SA_Wep_Paddle.obj-60eb8cffa401d1e09d8bc52a3e857fdb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

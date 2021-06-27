@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_Fence_Wood_01.obj-37f357f7868aeba3fe7439d4ff654064.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_Fence_Wood_01.obj-37f357f7868aeba3fe7439d4ff654064.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_Fence_Wood_01.obj"
+dest_files=[ "res://.import/SA_Prop_Fence_Wood_01.obj-37f357f7868aeba3fe7439d4ff654064.mesh", "res://.import/SA_Prop_Fence_Wood_01.obj-37f357f7868aeba3fe7439d4ff654064.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

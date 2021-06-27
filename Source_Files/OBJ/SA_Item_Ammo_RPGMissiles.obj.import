@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Item_Ammo_RPGMissiles.obj-df4e8ec09530b2ccca47b90071046872.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Item_Ammo_RPGMissiles.obj-df4e8ec09530b2ccca47b90071046872.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Item_Ammo_RPGMissiles.obj"
+dest_files=[ "res://.import/SA_Item_Ammo_RPGMissiles.obj-df4e8ec09530b2ccca47b90071046872.mesh", "res://.import/SA_Item_Ammo_RPGMissiles.obj-df4e8ec09530b2ccca47b90071046872.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

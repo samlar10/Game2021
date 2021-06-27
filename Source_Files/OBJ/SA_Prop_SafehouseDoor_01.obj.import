@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_SafehouseDoor_01.obj-f09c6e06161a8ccf97a0c33c84f69487.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_SafehouseDoor_01.obj-f09c6e06161a8ccf97a0c33c84f69487.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_SafehouseDoor_01.obj"
+dest_files=[ "res://.import/SA_Prop_SafehouseDoor_01.obj-f09c6e06161a8ccf97a0c33c84f69487.mesh", "res://.import/SA_Prop_SafehouseDoor_01.obj-f09c6e06161a8ccf97a0c33c84f69487.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

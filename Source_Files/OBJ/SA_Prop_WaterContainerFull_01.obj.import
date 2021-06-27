@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_WaterContainerFull_01.obj-0b810ecffa8084858fed5b0cf6bbdbab.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_WaterContainerFull_01.obj-0b810ecffa8084858fed5b0cf6bbdbab.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_WaterContainerFull_01.obj"
+dest_files=[ "res://.import/SA_Prop_WaterContainerFull_01.obj-0b810ecffa8084858fed5b0cf6bbdbab.mesh", "res://.import/SA_Prop_WaterContainerFull_01.obj-0b810ecffa8084858fed5b0cf6bbdbab.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

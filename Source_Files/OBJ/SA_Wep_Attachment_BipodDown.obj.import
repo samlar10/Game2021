@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_Attachment_BipodDown.obj-81cdec7e90e3c405dd1e24c15eb58306.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_Attachment_BipodDown.obj-81cdec7e90e3c405dd1e24c15eb58306.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_Attachment_BipodDown.obj"
+dest_files=[ "res://.import/SA_Wep_Attachment_BipodDown.obj-81cdec7e90e3c405dd1e24c15eb58306.mesh", "res://.import/SA_Wep_Attachment_BipodDown.obj-81cdec7e90e3c405dd1e24c15eb58306.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

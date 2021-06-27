@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_Firewood_01.obj-fa70939da4797a9b210b5d64ce67bbd6.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_Firewood_01.obj-fa70939da4797a9b210b5d64ce67bbd6.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_Firewood_01.obj"
+dest_files=[ "res://.import/SA_Prop_Firewood_01.obj-fa70939da4797a9b210b5d64ce67bbd6.mesh", "res://.import/SA_Prop_Firewood_01.obj-fa70939da4797a9b210b5d64ce67bbd6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Prop_BurntBrown_Bus_01.obj-c5984dcd673fda91fd6b42230fe33a8f.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Prop_BurntBrown_Bus_01.obj-c5984dcd673fda91fd6b42230fe33a8f.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Prop_BurntBrown_Bus_01.obj"
+dest_files=[ "res://.import/SA_Prop_BurntBrown_Bus_01.obj-c5984dcd673fda91fd6b42230fe33a8f.mesh", "res://.import/SA_Prop_BurntBrown_Bus_01.obj-c5984dcd673fda91fd6b42230fe33a8f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Env_Road_Bend_Right_01.obj-0916045eba5e322cea881dcd8a6593f5.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Env_Road_Bend_Right_01.obj-0916045eba5e322cea881dcd8a6593f5.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Env_Road_Bend_Right_01.obj"
+dest_files=[ "res://.import/SA_Env_Road_Bend_Right_01.obj-0916045eba5e322cea881dcd8a6593f5.mesh", "res://.import/SA_Env_Road_Bend_Right_01.obj-0916045eba5e322cea881dcd8a6593f5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

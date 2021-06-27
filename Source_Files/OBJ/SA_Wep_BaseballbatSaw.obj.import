@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SA_Wep_BaseballbatSaw.obj-ee53d0e546d12fdb75676871aeaa400d.mesh"
+
+[deps]
+
+files=[ "res://.import/SA_Wep_BaseballbatSaw.obj-ee53d0e546d12fdb75676871aeaa400d.mesh" ]
+
+source_file="res://Source_Files/OBJ/SA_Wep_BaseballbatSaw.obj"
+dest_files=[ "res://.import/SA_Wep_BaseballbatSaw.obj-ee53d0e546d12fdb75676871aeaa400d.mesh", "res://.import/SA_Wep_BaseballbatSaw.obj-ee53d0e546d12fdb75676871aeaa400d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
