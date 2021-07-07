@@ -1,0 +1,76 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://SyntyApocolypse/SA_Env_ManholeOpen.scn" type="PackedScene" id=1]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Road_Bend_Right_01.scn" type="PackedScene" id=2]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Road_Bend_Left_01.scn" type="PackedScene" id=3]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Road_Straight_clear_01.scn" type="PackedScene" id=4]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Road_CornerLines_01.scn" type="PackedScene" id=5]
+[ext_resource path="res://World_scenes/scenes/Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://SyntyApocolypse/SA_Bld_OfficeWhite_04.scn" type="PackedScene" id=7]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Road_StraightLarge_01.scn" type="PackedScene" id=8]
+[ext_resource path="res://SyntyApocolypse/SA_Env_Concrete.scn" type="PackedScene" id=9]
+
+[node name="Tutorial" type="Spatial"]
+
+[node name="SA_Env_Road_StraightLarge_01" parent="." instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.2108e-15, -7.5, 0, 2.5 )
+
+[node name="SA_Bld_OfficeWhite_04" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.31134e-07, -1.56324e-14, -0.500004, 0, -7.6726 )
+
+[node name="SA_Env_Concrete" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 7.5, 0, 2.5 )
+
+[node name="SA_Env_Concrete2" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 7.5, 0, -12.5 )
+
+[node name="SA_Env_Concrete3" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 22.5, 0, -12.5 )
+
+[node name="SA_Env_Concrete4" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 22.5, 0, 2.5 )
+
+[node name="SA_Env_Road_Straight_clear_01" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -7.5, 0, 2.5 )
+
+[node name="SA_Env_Road_Straight_clear_07" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 1.74845e-07, -2.08432e-14, 0, -1.19209e-07, -1, -1.74845e-07, 1, -1.19209e-07, -2.5, 0, 22.5 )
+
+[node name="SA_Env_Road_Straight_clear_08" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 1.74845e-07, -2.08432e-14, 0, -1.19209e-07, -1, -1.74845e-07, 1, -1.19209e-07, 2.5, 0, 22.5 )
+
+[node name="SA_Env_Road_Straight_clear_09" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 1.74845e-07, -2.08432e-14, 0, -1.19209e-07, -1, -1.74845e-07, 1, -1.19209e-07, 7.5, 0, 22.5 )
+
+[node name="SA_Env_Road_Straight_clear_10" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 1.74845e-07, -2.08432e-14, 0, -1.19209e-07, -1, -1.74845e-07, 1, -1.19209e-07, 12.5, 0, 22.5 )
+
+[node name="SA_Env_Road_Straight_clear_02" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -2.5, 0, 2.5 )
+
+[node name="SA_Env_Road_Straight_clear_03" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, 2.5, 0, 2.5 )
+
+[node name="SA_Env_Road_Straight_clear_04" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, 7.5, 0, 2.5 )
+
+[node name="SA_Env_Road_CornerLines_01" parent="." instance=ExtResource( 5 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -27.5, 0, 2.5 )
+
+[node name="SA_Env_Road_Bend_Left_01" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 22.5, 0, 2.5 )
+
+[node name="SA_Env_Road_Bend_Right_01" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 22.5, 0, 17.5 )
+
+[node name="SA_Env_Road_Straight_clear_05" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 22.5, 0, 12.5 )
+
+[node name="SA_Env_Road_Straight_clear_06" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 22.5, 0, 7.5 )
+
+[node name="SA_Env_ManholeOpen" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 12.5, 0, 12.5 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0.862336, 11 )
