@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Asphalt_Corner_01.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Asphalt_Short_01.tscn" type="PackedScene" id=2]
@@ -17,69 +17,45 @@
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Dirt_Bend_01.tscn" type="PackedScene" id=15]
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Dirt_Corner_01.tscn" type="PackedScene" id=16]
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Dirt_Asphalt_Transition_01.tscn" type="PackedScene" id=17]
-
-[sub_resource type="Environment" id=1]
-background_energy = 0.0
-ambient_light_color = Color( 1, 1, 1, 1 )
-ambient_light_energy = 0.05
+[ext_resource path="res://World_scenes/Cliff_Tiles/Clifftile_straight3_mesh.tscn" type="PackedScene" id=18]
+[ext_resource path="res://World_scenes/Cliff_Tiles/Clifftile_concave_mesh.tscn" type="PackedScene" id=19]
+[ext_resource path="res://World_scenes/Cliff_Tiles/Clifftile_convex_mesh.tscn" type="PackedScene" id=20]
+[ext_resource path="res://World_scenes/Cliff_Tiles/Clifftile_straight2_mesh.tscn" type="PackedScene" id=21]
+[ext_resource path="res://World_scenes/Cliff_Tiles/Clifftile_straight1_mesh.tscn" type="PackedScene" id=22]
+[ext_resource path="res://World_scenes/Cliff_Tiles/Clifftile_pass2_mesh.tscn" type="PackedScene" id=23]
+[ext_resource path="res://World_scenes/Cliff_Tiles/Clifftile_pass_mesh.tscn" type="PackedScene" id=24]
+[ext_resource path="res://World_scenes/MilitaryBuildings/SM_Bld_Building_02.tscn" type="PackedScene" id=25]
+[ext_resource path="res://World_scenes/MilitaryWalls/SM_Env_Wall_Damaged_03.tscn" type="PackedScene" id=26]
+[ext_resource path="res://World_scenes/MilitaryWalls/SM_Env_Wall_Damaged_01.tscn" type="PackedScene" id=27]
+[ext_resource path="res://World_scenes/MilitaryWalls/SM_Env_Wall_Damaged_02.tscn" type="PackedScene" id=28]
+[ext_resource path="res://World_scenes/MilitaryBuildings/SM_Bld_Mud_Hut_02.tscn" type="PackedScene" id=29]
+[ext_resource path="res://World_scenes/MilitaryBuildings/SM_Bld_GuardTower_01.tscn" type="PackedScene" id=30]
+[ext_resource path="res://World_scenes/MilitaryWalls/lights.tscn" type="PackedScene" id=31]
+[ext_resource path="res://World_scenes/MilitaryBuildings/SM_Bld_Barracks_01.tscn" type="PackedScene" id=32]
+[ext_resource path="res://World_scenes/MilitaryBuildings/SM_Bld_Mud_Hut_01.tscn" type="PackedScene" id=33]
+[ext_resource path="res://World_scenes/MilitaryWalls/powerpole4lights.tscn" type="PackedScene" id=34]
+[ext_resource path="res://World_scenes/Vehicles/SA_Prop_BurntBlack_FamilyCar_01.tscn" type="PackedScene" id=35]
+[ext_resource path="res://World_scenes/Vehicles/SK_Veh_tank_02.tscn" type="PackedScene" id=36]
+[ext_resource path="res://World_scenes/Vehicles/SA_Prop_BurntBlack_RV_01.tscn" type="PackedScene" id=37]
+[ext_resource path="res://World_scenes/Vehicles/SK_Veh_Truck_Troop_02.tscn" type="PackedScene" id=38]
+[ext_resource path="res://World_scenes/Vehicles/SA_Prop_BurntAPC_01.tscn" type="PackedScene" id=39]
+[ext_resource path="res://World_scenes/Vehicles/SA_Prop_BurntBlack_Car_01.tscn" type="PackedScene" id=40]
+[ext_resource path="res://World_scenes/Vehicles/SA_Prop_BurntBrown_Ute_02.tscn" type="PackedScene" id=41]
+[ext_resource path="res://World_scenes/Vehicles/SA_Prop_BurntBrown_Ute_01.tscn" type="PackedScene" id=42]
+[ext_resource path="res://World_scenes/Vehicles/SA_Prop_BurntBlack_Ute_01.tscn" type="PackedScene" id=43]
+[ext_resource path="res://World_scenes/Vehicles/SK_Veh_Troop_Car_01.tscn" type="PackedScene" id=44]
 
 [node name="Level_1" type="Spatial"]
 
 [node name="Player" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0.862336, 11 )
+visible = false
 
 [node name="SM_Env_Road_Asphalt_Long_01" parent="." instance=ExtResource( 5 )]
 transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0, 0, 0 )
 
 [node name="SM_Env_Road_Asphalt_Long_02" parent="." instance=ExtResource( 5 )]
 transform = Transform( -1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, -25, 0, -5 )
-
-[node name="SM_Env_Tile_Dirt_01" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 5 )
-
-[node name="SM_Env_Tile_Dirt_05" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 0 )
-
-[node name="SM_Env_Tile_Dirt_06" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -5 )
-
-[node name="SM_Env_Tile_Dirt_02" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_03" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 15 )
-
-[node name="SM_Env_Tile_Dirt_04" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 20 )
-
-[node name="SM_Env_Tile_Dirt_12" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_13" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, 15 )
-
-[node name="SM_Env_Tile_Dirt_14" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, 20 )
-
-[node name="SM_Env_Tile_Dirt_15" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_18" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_07" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -10, 0, -5 )
-
-[node name="SM_Env_Tile_Dirt_08" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -5, 0, -5 )
-
-[node name="SM_Env_Tile_Dirt_09" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -15, 0, -5 )
-
-[node name="SM_Env_Tile_Dirt_10" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -20, 0, -5 )
-
-[node name="SM_Env_Tile_Dirt_11" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -25, 0, -5 )
 
 [node name="SM_Env_Road_Asphalt_Bend_01" parent="." instance=ExtResource( 6 )]
 transform = Transform( -1, -2.98023e-08, 1.77636e-15, 0, -4.37114e-08, -1, 2.98023e-08, -1, 4.37114e-08, -5, 0, -5 )
@@ -105,39 +81,6 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0,
 [node name="SM_Env_Road_Asphalt_Short_06" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, 5 )
 
-[node name="SM_Env_Tile_Dirt_21" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_22" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_23" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_26" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -40, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_34" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -45, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_35" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, 10 )
-
-[node name="SM_Env_Tile_Dirt_36" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, 5 )
-
-[node name="SM_Env_Tile_Dirt_37" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, 0 )
-
-[node name="SM_Env_Tile_Dirt_38" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -5 )
-
-[node name="SM_Env_Tile_Dirt_24" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -30, 0, -5 )
-
-[node name="SM_Env_Tile_Dirt_25" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -35, 0, -5 )
-
 [node name="SM_Env_Road_Asphalt_Short_08" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, 5 )
 
@@ -158,27 +101,6 @@ transform = Transform( -1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.742
 
 [node name="SM_Env_Road_Asphalt_Short_12" parent="." instance=ExtResource( 2 )]
 transform = Transform( -1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, -40, 0, -5 )
-
-[node name="SM_Env_Tile_Dirt_27" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -10 )
-
-[node name="SM_Env_Tile_Dirt_28" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -15 )
-
-[node name="SM_Env_Tile_Dirt_29" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -20 )
-
-[node name="SM_Env_Tile_Dirt_30" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -15 )
-
-[node name="SM_Env_Tile_Dirt_33" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -10 )
-
-[node name="SM_Env_Tile_Dirt_31" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -20 )
-
-[node name="SM_Env_Tile_Dirt_32" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -25 )
 
 [node name="SM_Env_Road_Asphalt_Short_13" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -50, 0, -20 )
@@ -207,27 +129,6 @@ transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -
 [node name="SM_Env_Road_Asphalt_Short_18" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -40, 0, -25 )
 
-[node name="SM_Env_Tile_Dirt_39" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -40, 0, -25 )
-
-[node name="SM_Env_Tile_Dirt_40" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -30 )
-
-[node name="SM_Env_Tile_Dirt_41" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -35 )
-
-[node name="SM_Env_Tile_Dirt_42" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -40 )
-
-[node name="SM_Env_Tile_Dirt_43" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -35 )
-
-[node name="SM_Env_Tile_Dirt_44" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -40 )
-
-[node name="SM_Env_Tile_Dirt_45" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -45 )
-
 [node name="SM_Env_Road_Asphalt_Short_23" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -50, 0, -40 )
 
@@ -236,9 +137,6 @@ transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4
 
 [node name="SM_Env_Road_Asphalt_Short_25" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -50, 0, -30 )
-
-[node name="SM_Env_Tile_Dirt_46" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -25 )
 
 [node name="SM_Env_Road_Asphalt_Short_26" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -50, 0, -25 )
@@ -255,18 +153,6 @@ transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -
 [node name="SM_Env_Road_Asphalt_Short_29" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -40, 0, -45 )
 
-[node name="SM_Env_Tile_Dirt_55" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -45 )
-
-[node name="SM_Env_Tile_Dirt_56" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -50 )
-
-[node name="SM_Env_Tile_Dirt_57" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -50 )
-
-[node name="SM_Env_Tile_Dirt_58" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -55 )
-
 [node name="SM_Env_Road_Asphalt_Short_37" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -50, 0, -50 )
 
@@ -279,98 +165,8 @@ transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -
 [node name="SM_Env_Road_Asphalt_Short_40" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -40, 0, -55 )
 
-[node name="SM_Env_Tile_Dirt_59" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -55 )
-
-[node name="SM_Env_Tile_Dirt_60" parent="." instance=ExtResource( 4 )]
-transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, -40, 0, -60 )
-
 [node name="SM_Env_Road_Asphalt_Short_41" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -50, 0, -55 )
-
-[node name="SM_Env_Tile_Dirt_61" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -60 )
-
-[node name="SM_Env_Tile_Dirt_62" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -65 )
-
-[node name="SM_Env_Tile_Dirt_63" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -70 )
-
-[node name="SM_Env_Tile_Dirt_64" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -50, 0, -70 )
-
-[node name="SM_Env_Tile_Dirt_65" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -45, 0, -70 )
-
-[node name="SM_Env_Tile_Dirt_67" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 15, 0, -70 )
-
-[node name="SM_Env_Tile_Dirt_68" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 20, 0, -70 )
-
-[node name="SM_Env_Tile_Dirt_73" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 15, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_74" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 20, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_75" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 5, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_76" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 10, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_77" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -5, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_78" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 0, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_79" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -15, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_80" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -10, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_81" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -25, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_82" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -20, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_83" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -35, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_84" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -30, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_85" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -45, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_86" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -40, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_87" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -55, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_88" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -50, 0, -75 )
-
-[node name="SM_Env_Tile_Dirt_69" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 25, 0, -55 )
-
-[node name="SM_Env_Tile_Dirt_70" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 30, 0, -55 )
-
-[node name="SM_Env_Tile_Dirt_71" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 15, 0, -55 )
-
-[node name="SM_Env_Tile_Dirt_72" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 20, 0, -55 )
-
-[node name="SM_Env_Tile_Dirt_66" parent="." instance=ExtResource( 4 )]
-transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -40, 0, -70 )
 
 [node name="SM_Env_Road_Asphalt_Short_43" parent="." instance=ExtResource( 2 )]
 transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -50, 0, -60 )
@@ -453,11 +249,44 @@ transform = Transform( 1, 1.49012e-07, -6.21725e-15, 0, -4.37114e-08, -1, -1.490
 [node name="SM_Prop_Wall_28" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 1.49012e-07, -6.21725e-15, 0, -4.37114e-08, -1, -1.49012e-07, 1, -4.37114e-08, -17, 0, -54.4331 )
 
+[node name="SM_Prop_Wall_29" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 1.49012e-07, -6.21725e-15, 0, -4.37114e-08, -1, -1.49012e-07, 1, -4.37114e-08, 3, 0, -54.4331 )
+
+[node name="SM_Prop_Wall_30" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 1.49012e-07, -6.21725e-15, 0, -4.37114e-08, -1, -1.49012e-07, 1, -4.37114e-08, 8, 0, -54.4331 )
+
+[node name="SM_Prop_Wall_31" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 1.49012e-07, -6.21725e-15, 0, -4.37114e-08, -1, -1.49012e-07, 1, -4.37114e-08, 13, 0, -54.4331 )
+
+[node name="SM_Prop_Wall_32" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 1.49012e-07, -6.21725e-15, 0, -4.37114e-08, -1, -1.49012e-07, 1, -4.37114e-08, 18, 0, -54.4331 )
+
+[node name="SM_Prop_Wall_33" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 1.49012e-07, -6.21725e-15, 0, -4.37114e-08, -1, -1.49012e-07, 1, -4.37114e-08, 23, 0, -54.4331 )
+
+[node name="SM_Prop_Wall_34" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1.05301e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.05301e-07, -4.30656e-15, 24, 0, -51.4331 )
+
+[node name="SM_Prop_Wall_35" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1.05301e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.05301e-07, -4.30656e-15, 24, 0, -46.4331 )
+
+[node name="SM_Prop_Wall_36" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.258819, -0.965926, 4.2222e-08, 0, -4.37114e-08, -1, 0.965926, 0.258819, -1.13133e-08, 25, 0, -41.4331 )
+
 [node name="powerpole" parent="." instance=ExtResource( 8 )]
 transform = Transform( -0.819152, 0, 0.573576, 0, 1, 0, -0.573576, 0, -0.819152, -35.0531, 0, -10.4 )
 
+[node name="powerpole6" parent="." instance=ExtResource( 8 )]
+transform = Transform( 4.32134e-07, 0, -1, 0, 1, 0, 1, 0, 4.32134e-07, -18.0531, 0, -26.4 )
+
+[node name="powerpole7" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 21.9469, 0, -3.4 )
+
 [node name="powerpole3" parent="." instance=ExtResource( 8 )]
 transform = Transform( 0.573577, 0, 0.819152, 0, 1, 0, -0.819152, 0, 0.573577, -35.0531, 0, -54.5 )
+
+[node name="powerpole4" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.819152, 0, -0.573577, 0, 1, 0, 0.573577, 0, 0.819152, 24.0469, 0, -54.5 )
 
 [node name="SM_Prop_Wall_03" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73206e-15, 5, 0, -1.43309 )
@@ -696,6 +525,189 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -
 [node name="SM_Env_Tile_Asphalt_72" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -50 )
 
+[node name="SM_Env_Tile_Asphalt_73" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -10 )
+
+[node name="SM_Env_Tile_Asphalt_74" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -15 )
+
+[node name="SM_Env_Tile_Asphalt_75" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -20 )
+
+[node name="SM_Env_Tile_Asphalt_76" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -10 )
+
+[node name="SM_Env_Tile_Asphalt_77" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -15 )
+
+[node name="SM_Env_Tile_Asphalt_78" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -20 )
+
+[node name="SM_Env_Tile_Asphalt_79" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -15 )
+
+[node name="SM_Env_Tile_Asphalt_80" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -20 )
+
+[node name="SM_Env_Tile_Asphalt_81" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -10 )
+
+[node name="SM_Env_Tile_Asphalt_108" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -10 )
+
+[node name="SM_Env_Tile_Asphalt_82" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -15 )
+
+[node name="SM_Env_Tile_Asphalt_83" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -20 )
+
+[node name="SM_Env_Tile_Asphalt_84" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -25 )
+
+[node name="SM_Env_Tile_Asphalt_85" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -30 )
+
+[node name="SM_Env_Tile_Asphalt_86" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -35 )
+
+[node name="SM_Env_Tile_Asphalt_87" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -25 )
+
+[node name="SM_Env_Tile_Asphalt_88" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -30 )
+
+[node name="SM_Env_Tile_Asphalt_89" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -35 )
+
+[node name="SM_Env_Tile_Asphalt_90" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -25 )
+
+[node name="SM_Env_Tile_Asphalt_91" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -30 )
+
+[node name="SM_Env_Tile_Asphalt_92" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -35 )
+
+[node name="SM_Env_Tile_Asphalt_93" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -25 )
+
+[node name="SM_Env_Tile_Asphalt_94" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -30 )
+
+[node name="SM_Env_Tile_Asphalt_95" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -35 )
+
+[node name="SM_Env_Tile_Asphalt_96" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -40 )
+
+[node name="SM_Env_Tile_Asphalt_97" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -45 )
+
+[node name="SM_Env_Tile_Asphalt_98" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -50 )
+
+[node name="SM_Env_Tile_Asphalt_99" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -40 )
+
+[node name="SM_Env_Tile_Asphalt_100" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -45 )
+
+[node name="SM_Env_Tile_Asphalt_101" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -50 )
+
+[node name="SM_Env_Tile_Asphalt_102" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -40 )
+
+[node name="SM_Env_Tile_Asphalt_103" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -45 )
+
+[node name="SM_Env_Tile_Asphalt_104" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -50 )
+
+[node name="SM_Env_Tile_Asphalt_105" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -40 )
+
+[node name="SM_Env_Tile_Asphalt_106" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -45 )
+
+[node name="SM_Env_Tile_Asphalt_107" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -50 )
+
+[node name="SM_Env_Tile_Asphalt_145" parent="." instance=ExtResource( 7 )]
+transform = Transform( 11, 0, 0, 0, 4, -2.13163e-13, 0, 4.26326e-14, 20, 33, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_121" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, 20 )
+
+[node name="SM_Env_Tile_Asphalt_122" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, 15 )
+
+[node name="SM_Env_Tile_Asphalt_123" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, 10 )
+
+[node name="SM_Env_Tile_Asphalt_124" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, 20 )
+
+[node name="SM_Env_Tile_Asphalt_125" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, 15 )
+
+[node name="SM_Env_Tile_Asphalt_126" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, 10 )
+
+[node name="SM_Env_Tile_Asphalt_127" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, 20 )
+
+[node name="SM_Env_Tile_Asphalt_128" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, 15 )
+
+[node name="SM_Env_Tile_Asphalt_129" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, 10 )
+
+[node name="SM_Env_Tile_Asphalt_130" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, 20 )
+
+[node name="SM_Env_Tile_Asphalt_131" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, 15 )
+
+[node name="SM_Env_Tile_Asphalt_132" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, 10 )
+
+[node name="SM_Env_Tile_Asphalt_133" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, 5 )
+
+[node name="SM_Env_Tile_Asphalt_134" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, 0 )
+
+[node name="SM_Env_Tile_Asphalt_135" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -5 )
+
+[node name="SM_Env_Tile_Asphalt_136" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, 5 )
+
+[node name="SM_Env_Tile_Asphalt_137" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, 0 )
+
+[node name="SM_Env_Tile_Asphalt_138" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -5 )
+
+[node name="SM_Env_Tile_Asphalt_139" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, 5 )
+
+[node name="SM_Env_Tile_Asphalt_140" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, 0 )
+
+[node name="SM_Env_Tile_Asphalt_141" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -5 )
+
+[node name="SM_Env_Tile_Asphalt_142" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, 5 )
+
+[node name="SM_Env_Tile_Asphalt_143" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, 0 )
+
+[node name="SM_Env_Tile_Asphalt_144" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -5 )
+
 [node name="SM_Env_Road_Asphalt_Corner_04" parent="." instance=ExtResource( 1 )]
 transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -40, 0, -65 )
 
@@ -777,11 +789,1121 @@ transform = Transform( -1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.742
 [node name="SM_Env_Road_Dirt_Corner_01" parent="." instance=ExtResource( 16 )]
 transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 25, 0, -65 )
 
+[node name="SM_Env_Road_Dirt_Bend_03" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73206e-15, 25, 0, -100 )
+
+[node name="SM_Env_Road_Dirt_Short_09" parent="." instance=ExtResource( 14 )]
+transform = Transform( -1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 30, 0, -105 )
+
+[node name="SM_Env_Road_Dirt_Short_10" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73206e-15, 25, 0, -95 )
+
+[node name="SM_Env_Road_Dirt_Corner_03" parent="." instance=ExtResource( 16 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91068e-15, 35, 0, -100 )
+
+[node name="SM_Env_Road_Dirt_Bend_04" parent="." instance=ExtResource( 15 )]
+transform = Transform( -2.18557e-07, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -2.18557e-07, 9.55343e-15, 45, 0, -100 )
+
+[node name="SM_Env_Road_Dirt_Short_11" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 1.74846e-07, -7.64274e-15, 0, -4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, 40, 0, -95 )
+
+[node name="SM_Env_Road_Dirt_Short_12" parent="." instance=ExtResource( 14 )]
+transform = Transform( -2.18557e-07, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -2.18557e-07, 9.55343e-15, 45, 0, -105 )
+
+[node name="SM_Env_Road_Dirt_Corner_04" parent="." instance=ExtResource( 16 )]
+transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73205e-15, 35, 0, -100 )
+
+[node name="SM_Env_Road_Dirt_Bend_02" parent="." instance=ExtResource( 15 )]
+transform = Transform( -1, -8.74228e-08, 3.82138e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 40, 0, -180 )
+
+[node name="SM_Env_Road_Dirt_Bend_05" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73207e-15, -20, 0, -175 )
+
+[node name="SM_Env_Road_Dirt_Bend_06" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1, 1.74846e-07, -7.64275e-15, 0, -4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, -15, 0, -170 )
+
+[node name="SM_Env_Road_Dirt_Short_07" parent="." instance=ExtResource( 14 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 45, 0, -175 )
+
+[node name="SM_Env_Road_Dirt_Short_13" parent="." instance=ExtResource( 14 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 45, 0, -170 )
+
+[node name="SM_Env_Road_Dirt_Short_14" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73206e-15, 35, 0, -165 )
+
+[node name="SM_Env_Road_Dirt_Short_08" parent="." instance=ExtResource( 14 )]
+transform = Transform( -1, -8.74228e-08, 3.82138e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 35, 0, -180 )
+
+[node name="SM_Env_Road_Dirt_Short_15" parent="." instance=ExtResource( 14 )]
+transform = Transform( -1, -8.74228e-08, 3.82138e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, -10, 0, -180 )
+
+[node name="SM_Env_Road_Dirt_Short_16" parent="." instance=ExtResource( 14 )]
+transform = Transform( -1, -8.74228e-08, 3.82138e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, -15, 0, -180 )
+
+[node name="SM_Env_Road_Dirt_Short_17" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 1.74846e-07, -7.64275e-15, 0, -4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, -10, 0, -170 )
+
+[node name="SM_Env_Road_Dirt_Short_18" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 1.74846e-07, -7.64275e-15, 0, -4.37114e-08, -1, -1.74846e-07, 1, -4.37114e-08, -5, 0, -170 )
+
+[node name="SM_Env_Road_Dirt_Corner_02" parent="." instance=ExtResource( 16 )]
+transform = Transform( 1, -1.06581e-14, 4.02341e-21, 0, -4.37114e-08, -1, 1.06581e-14, 1, -4.37114e-08, 40, 0, -170 )
+
 [node name="SM_Env_Road_Dirt_Long_01" parent="." instance=ExtResource( 12 )]
 transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 35, 0, -95 )
 
 [node name="SM_Env_Road_Dirt_Long_02" parent="." instance=ExtResource( 12 )]
 transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73206e-15, 25, 0, -75 )
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 1 )
+[node name="SM_Env_Road_Dirt_Long_03" parent="." instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 45, 0, -125 )
+
+[node name="SM_Env_Road_Dirt_Long_04" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73206e-15, 35, 0, -105 )
+
+[node name="SM_Env_Road_Dirt_Long_05" parent="." instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 45, 0, -145 )
+
+[node name="SM_Env_Road_Dirt_Long_06" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73206e-15, 35, 0, -125 )
+
+[node name="SM_Env_Road_Dirt_Long_09" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, -8.74228e-08, 3.82138e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 15, 0, -180 )
+
+[node name="SM_Env_Road_Dirt_Long_10" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 1.74845e-07, -7.64275e-15, 0, -4.37114e-08, -1, -1.74845e-07, 1, -4.37114e-08, 35, 0, -170 )
+
+[node name="SM_Env_Road_Dirt_Long_11" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, -8.74228e-08, 3.82138e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, -5, 0, -180 )
+
+[node name="SM_Env_Road_Dirt_Long_12" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 1.74845e-07, -7.64275e-15, 0, -4.37114e-08, -1, -1.74845e-07, 1, -4.37114e-08, 15, 0, -170 )
+
+[node name="SM_Env_Road_Dirt_Long_07" parent="." instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 45, 0, -165 )
+
+[node name="SM_Env_Road_Dirt_Long_08" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 1.31134e-07, -5.73206e-15, 35, 0, -145 )
+
+[node name="Clifftile_straight3_mesh" parent="." instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, -55, 0, 0 )
+
+[node name="Clifftile_straight3_mesh2" parent="." instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -45, 0, -90 )
+
+[node name="Clifftile_straight3_mesh3" parent="." instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.21079e-15, 25, 0, -20 )
+
+[node name="Clifftile_straight3_mesh5" parent="." instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.21079e-15, 45, 0, -100 )
+
+[node name="Clifftile_straight3_mesh6" parent="." instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.21079e-15, 45, 0, -120 )
+
+[node name="Clifftile_straight3_mesh7" parent="." instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.21079e-15, 45, 0, -140 )
+
+[node name="Clifftile_straight3_mesh8" parent="." instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.21079e-15, 45, 0, -160 )
+
+[node name="Clifftile_straight3_mesh9" parent="." instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 15, 0, -190 )
+
+[node name="Clifftile_straight3_mesh11" parent="." instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -25, 0, -190 )
+
+[node name="Clifftile_straight3_mesh10" parent="." instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.21079e-15, 45, 0, -180 )
+
+[node name="Clifftile_straight3_mesh4" parent="." instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.21079e-15, 25, 0, 0 )
+
+[node name="Clifftile_concave_mesh" parent="." instance=ExtResource( 19 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -45, 0, 10 )
+
+[node name="Clifftile_concave_mesh2" parent="." instance=ExtResource( 19 )]
+transform = Transform( -8.9407e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -8.9407e-08, 8.88178e-15, -55, 0, -80 )
+
+[node name="Clifftile_concave_mesh3" parent="." instance=ExtResource( 19 )]
+transform = Transform( -8.9407e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -8.9407e-08, 8.88178e-15, 15, 0, -100 )
+
+[node name="Clifftile_concave_mesh5" parent="." instance=ExtResource( 19 )]
+transform = Transform( 1.98423e-09, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.98423e-09, 1.5398e-15, 45, 0, -60 )
+
+[node name="Clifftile_straight2_mesh" parent="." instance=ExtResource( 21 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -25, 0, 10 )
+
+[node name="Clifftile_convex_mesh" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -15, 0, 20 )
+
+[node name="Clifftile_convex_mesh2" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, -25, 0, -90 )
+
+[node name="Clifftile_convex_mesh3" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, -5, 0, -100 )
+
+[node name="Clifftile_convex_mesh6" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 5, 0, -90 )
+
+[node name="Clifftile_convex_mesh10" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.31134e-07, -1.56324e-14, 35, 0, -50 )
+
+[node name="Clifftile_convex_mesh4" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.31134e-07, -1.56324e-14, 5, 0, -150 )
+
+[node name="Clifftile_convex_mesh5" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -15, 0, -140 )
+
+[node name="Clifftile_convex_mesh7" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21081e-15, 25, 0, -110 )
+
+[node name="Clifftile_convex_mesh8" parent="." instance=ExtResource( 20 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, 35, 0, -160 )
+
+[node name="Clifftile_convex_mesh9" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1.31134e-07, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.31134e-07, -1.56324e-14, 25, 0, -170 )
+
+[node name="Clifftile_straight1_mesh" parent="." instance=ExtResource( 22 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, -55, 0, -20 )
+
+[node name="Clifftile_straight1_mesh3" parent="." instance=ExtResource( 22 )]
+transform = Transform( 1.31134e-07, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.31134e-07, -1.56324e-14, 25, 0, -40 )
+
+[node name="Clifftile_straight1_mesh4" parent="." instance=ExtResource( 22 )]
+transform = Transform( 1.31134e-07, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, 1.31134e-07, -1.56324e-14, 45, 0, -80 )
+
+[node name="Clifftile_straight1_mesh5" parent="." instance=ExtResource( 22 )]
+transform = Transform( 1, 1.74846e-07, -2.08432e-14, 0, -1.19209e-07, -1, -1.74846e-07, 1, -1.19209e-07, -5, 0, -190 )
+
+[node name="Clifftile_straight1_mesh2" parent="." instance=ExtResource( 22 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, -55, 0, -60 )
+
+[node name="Clifftile_straight2_mesh2" parent="." instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, -55, 0, -40 )
+
+[node name="Clifftile_straight2_mesh3" parent="." instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 35, 0, -120 )
+
+[node name="Clifftile_straight2_mesh6" parent="." instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, -35, 0, -160 )
+
+[node name="Clifftile_straight2_mesh4" parent="." instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, 35, 0, -140 )
+
+[node name="Clifftile_pass2_mesh" parent="." instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.21079e-15, -15, 0, -100 )
+
+[node name="Clifftile_pass_mesh" parent="." instance=ExtResource( 24 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, -5, 0, -140 )
+
+[node name="Clifftile_concave_mesh4" parent="." instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, -1, 1.19209e-07, 0, -1.19209e-07, -1, 1, -4.37114e-08, 5.21079e-15, 15, 0, -160 )
+
+[node name="Clifftile_concave_mesh6" parent="." instance=ExtResource( 19 )]
+transform = Transform( 1, 0, 0, 0, -1.19209e-07, -1, 0, 1, -1.19209e-07, 35, 0, -190 )
+
+[node name="Clifftile_concave_mesh7" parent="." instance=ExtResource( 19 )]
+transform = Transform( -1, -8.74228e-08, 1.04216e-14, 0, -1.19209e-07, -1, 8.74228e-08, -1, 1.19209e-07, -25, 0, -150 )
+
+[node name="Clifftile_concave_mesh8" parent="." instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 1, -1.19209e-07, 0, -1.19209e-07, -1, -1, -4.37114e-08, 5.21079e-15, -35, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_01" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 20 )
+
+[node name="SM_Env_Tile_Dirt_02" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 15 )
+
+[node name="SM_Env_Tile_Dirt_03" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_04" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 5 )
+
+[node name="SM_Env_Tile_Dirt_05" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, 0 )
+
+[node name="SM_Env_Tile_Dirt_06" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_07" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_08" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_09" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_10" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_11" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_12" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_13" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_14" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_15" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -10 )
+
+[node name="SM_Env_Tile_Dirt_16" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -15 )
+
+[node name="SM_Env_Tile_Dirt_17" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -20 )
+
+[node name="SM_Env_Tile_Dirt_18" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -25 )
+
+[node name="SM_Env_Tile_Dirt_19" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -30 )
+
+[node name="SM_Env_Tile_Dirt_20" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -35 )
+
+[node name="SM_Env_Tile_Dirt_21" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -40 )
+
+[node name="SM_Env_Tile_Dirt_22" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -45 )
+
+[node name="SM_Env_Tile_Dirt_23" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -50 )
+
+[node name="SM_Env_Tile_Dirt_24" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -55 )
+
+[node name="SM_Env_Tile_Dirt_25" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -55 )
+
+[node name="SM_Env_Tile_Dirt_26" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -55 )
+
+[node name="SM_Env_Tile_Dirt_27" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -55 )
+
+[node name="SM_Env_Tile_Dirt_32" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -55 )
+
+[node name="SM_Env_Tile_Dirt_33" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -55 )
+
+[node name="SM_Env_Tile_Dirt_34" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -60 )
+
+[node name="SM_Env_Tile_Dirt_35" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -60 )
+
+[node name="SM_Env_Tile_Dirt_36" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -65 )
+
+[node name="SM_Env_Tile_Dirt_37" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -65 )
+
+[node name="SM_Env_Tile_Dirt_38" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -70 )
+
+[node name="SM_Env_Tile_Dirt_39" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -70 )
+
+[node name="SM_Env_Tile_Dirt_40" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_42" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_43" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_44" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_45" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_46" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_47" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_48" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_49" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_50" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 30, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_51" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_52" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_53" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_54" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_55" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_56" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_57" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_58" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_59" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_60" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_61" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -175 )
+
+[node name="SM_Env_Tile_Dirt_62" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -170 )
+
+[node name="SM_Env_Tile_Dirt_63" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_64" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_65" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_66" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_67" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -145 )
+
+[node name="SM_Env_Tile_Dirt_68" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -145 )
+
+[node name="SM_Env_Tile_Dirt_69" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -145 )
+
+[node name="SM_Env_Tile_Dirt_70" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -145 )
+
+[node name="SM_Env_Tile_Dirt_71" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -145 )
+
+[node name="SM_Env_Tile_Dirt_72" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -145 )
+
+[node name="SM_Env_Tile_Dirt_73" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -140 )
+
+[node name="SM_Env_Tile_Dirt_74" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -140 )
+
+[node name="SM_Env_Tile_Dirt_75" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -140 )
+
+[node name="SM_Env_Tile_Dirt_76" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -140 )
+
+[node name="SM_Env_Tile_Dirt_77" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -135 )
+
+[node name="SM_Env_Tile_Dirt_78" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -135 )
+
+[node name="SM_Env_Tile_Dirt_79" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -130 )
+
+[node name="SM_Env_Tile_Dirt_80" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -130 )
+
+[node name="SM_Env_Tile_Dirt_81" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -125 )
+
+[node name="SM_Env_Tile_Dirt_82" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -125 )
+
+[node name="SM_Env_Tile_Dirt_83" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -120 )
+
+[node name="SM_Env_Tile_Dirt_84" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -120 )
+
+[node name="SM_Env_Tile_Dirt_85" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -115 )
+
+[node name="SM_Env_Tile_Dirt_86" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -115 )
+
+[node name="SM_Env_Tile_Dirt_87" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -110 )
+
+[node name="SM_Env_Tile_Dirt_88" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -110 )
+
+[node name="SM_Env_Tile_Dirt_89" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -105 )
+
+[node name="SM_Env_Tile_Dirt_90" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -105 )
+
+[node name="SM_Env_Tile_Dirt_91" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -100 )
+
+[node name="SM_Env_Tile_Dirt_92" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -100 )
+
+[node name="SM_Env_Tile_Dirt_93" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -95 )
+
+[node name="SM_Env_Tile_Dirt_94" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -95 )
+
+[node name="SM_Env_Tile_Dirt_95" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_96" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_97" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -95 )
+
+[node name="SM_Env_Tile_Dirt_98" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -95 )
+
+[node name="SM_Env_Tile_Dirt_99" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_103" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_104" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_100" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_101" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_102" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_105" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_106" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_107" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_108" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_109" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -40, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_110" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -45, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_111" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_112" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_113" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -45, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_114" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -40, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_115" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_116" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_117" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_118" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_119" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_120" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_121" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_122" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_123" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_124" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_125" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_126" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_127" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_128" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_129" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_130" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -95 )
+
+[node name="SM_Env_Tile_Dirt_131" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -95 )
+
+[node name="SM_Env_Tile_Dirt_132" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -100 )
+
+[node name="SM_Env_Tile_Dirt_133" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -105 )
+
+[node name="SM_Env_Tile_Dirt_134" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -105 )
+
+[node name="SM_Env_Tile_Dirt_135" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 30, 0, -105 )
+
+[node name="SM_Env_Tile_Dirt_136" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -105 )
+
+[node name="SM_Env_Tile_Dirt_137" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -110 )
+
+[node name="SM_Env_Tile_Dirt_138" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 30, 0, -110 )
+
+[node name="SM_Env_Tile_Dirt_139" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -115 )
+
+[node name="SM_Env_Tile_Dirt_140" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -100 )
+
+[node name="SM_Env_Tile_Dirt_141" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -95 )
+
+[node name="SM_Env_Tile_Dirt_142" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -90 )
+
+[node name="SM_Env_Tile_Dirt_143" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_144" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_145" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -85 )
+
+[node name="SM_Env_Tile_Dirt_237" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_146" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_147" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_148" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_149" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_150" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -70 )
+
+[node name="SM_Env_Tile_Dirt_151" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -70 )
+
+[node name="SM_Env_Tile_Dirt_152" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_153" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_154" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_155" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_156" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_157" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_158" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_159" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_160" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_161" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_162" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_163" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_164" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_165" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_166" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -40, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_167" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -45, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_168" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -75 )
+
+[node name="SM_Env_Tile_Dirt_169" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -70 )
+
+[node name="SM_Env_Tile_Dirt_170" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -45, 0, -70 )
+
+[node name="SM_Env_Tile_Dirt_171" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -40, 0, -70 )
+
+[node name="SM_Env_Tile_Dirt_172" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, -70 )
+
+[node name="SM_Env_Tile_Dirt_173" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -65 )
+
+[node name="SM_Env_Tile_Dirt_174" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -60 )
+
+[node name="SM_Env_Tile_Dirt_175" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -55 )
+
+[node name="SM_Env_Tile_Dirt_176" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -50 )
+
+[node name="SM_Env_Tile_Dirt_177" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -45 )
+
+[node name="SM_Env_Tile_Dirt_178" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -40 )
+
+[node name="SM_Env_Tile_Dirt_179" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -35 )
+
+[node name="SM_Env_Tile_Dirt_180" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -30 )
+
+[node name="SM_Env_Tile_Dirt_181" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -25 )
+
+[node name="SM_Env_Tile_Dirt_182" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -20 )
+
+[node name="SM_Env_Tile_Dirt_183" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -15 )
+
+[node name="SM_Env_Tile_Dirt_184" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -10 )
+
+[node name="SM_Env_Tile_Dirt_185" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, -5 )
+
+[node name="SM_Env_Tile_Dirt_186" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, 0 )
+
+[node name="SM_Env_Tile_Dirt_187" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, 5 )
+
+[node name="SM_Env_Tile_Dirt_188" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -50, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_189" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -45, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_190" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -40, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_191" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -35, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_192" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_193" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_194" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_195" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_196" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, 10 )
+
+[node name="SM_Env_Tile_Dirt_197" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, 15 )
+
+[node name="SM_Env_Tile_Dirt_198" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, 15 )
+
+[node name="SM_Env_Tile_Dirt_199" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, 15 )
+
+[node name="SM_Env_Tile_Dirt_200" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, 20 )
+
+[node name="SM_Env_Tile_Dirt_201" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, 20 )
+
+[node name="SM_Env_Tile_Dirt_202" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_203" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_204" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 30, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_205" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_206" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_207" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_208" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_209" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_210" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_211" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_212" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_213" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_214" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_215" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_216" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_217" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_218" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_219" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_220" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_221" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_222" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_223" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_224" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_225" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_226" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_227" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_228" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_229" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_230" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_231" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_232" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_233" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_234" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_235" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_236" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_238" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 30, 0, -45 )
+
+[node name="SM_Env_Tile_Dirt_239" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 30, 0, -40 )
+
+[node name="SM_Env_Tile_Dirt_240" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -45 )
+
+[node name="SM_Env_Tile_Dirt_241" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -50 )
+
+[node name="SM_Env_Tile_Dirt_242" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -50 )
+
+[node name="SM_Env_Tile_Dirt_243" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 45, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_244" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_245" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_246" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 30, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_247" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_248" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 20, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_249" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_250" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_251" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_252" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_253" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -5, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_254" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -10, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_255" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -15, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_256" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_257" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_258" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -185 )
+
+[node name="SM_Env_Tile_Dirt_259" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_260" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -180 )
+
+[node name="SM_Env_Tile_Dirt_261" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -175 )
+
+[node name="SM_Env_Tile_Dirt_262" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -175 )
+
+[node name="SM_Env_Tile_Dirt_263" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -170 )
+
+[node name="SM_Env_Tile_Dirt_264" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -170 )
+
+[node name="SM_Env_Tile_Dirt_265" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_266" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -165 )
+
+[node name="SM_Env_Tile_Dirt_267" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_268" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -160 )
+
+[node name="SM_Env_Tile_Dirt_269" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_270" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -155 )
+
+[node name="SM_Env_Tile_Dirt_271" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_272" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -25, 0, -150 )
+
+[node name="SM_Env_Tile_Dirt_41" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 40, 0, -80 )
+
+[node name="SM_Env_Tile_Dirt_28" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 30, 0, -50 )
+
+[node name="SM_Env_Tile_Dirt_29" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 30, 0, -55 )
+
+[node name="SM_Env_Tile_Dirt_30" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 35, 0, -50 )
+
+[node name="SM_Bld_GuardTower_01" parent="." instance=ExtResource( 30 )]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 2, 0, -51 )
+
+[node name="SM_Bld_GuardTower_02" parent="." instance=ExtResource( 30 )]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -18, 0, -51 )
+
+[node name="spotlight1" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 10, -52.7 )
+
+[node name="spotlight2" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 10, -52.7 )
+
+[node name="SM_Bld_Mud_Hut_02" parent="." instance=ExtResource( 29 )]
+transform = Transform( 0, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, 0, 0, -23, 0, -157 )
+
+[node name="SM_Bld_Mud_Hut_03" parent="." instance=ExtResource( 33 )]
+transform = Transform( 0.707107, 0.707107, -3.09086e-08, 0, -4.37114e-08, -1, -0.707107, 0.707107, -3.09086e-08, 8, 0, -159 )
+
+[node name="SM_Bld_Building_02" parent="." instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -24, 0, -19 )
+
+[node name="SM_Bld_Building_03" parent="." instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -24, 0, -33 )
+
+[node name="SM_Bld_Barracks_01" parent="." instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, 8 )
+
+[node name="SM_Env_Wall_Damaged_02" parent="." instance=ExtResource( 28 )]
+transform = Transform( 0.707107, -0.707107, 3.09086e-08, 0, -4.37114e-08, -1, 0.707107, 0.707107, -3.09086e-08, -22.8, 0, -163.3 )
+
+[node name="SM_Env_Wall_Damaged_03" parent="." instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -27, 0, -165 )
+
+[node name="SM_Env_Wall_Damaged_05" parent="." instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -11, 0, -125 )
+
+[node name="SM_Env_Wall_Damaged_04" parent="." instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30, 0, -179 )
+
+[node name="SM_Env_Wall_Damaged_01" parent="." instance=ExtResource( 27 )]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -22.2, 0, -180.6 )
+
+[node name="SM_Env_Wall_Damaged_06" parent="." instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -8, 0, -110 )
+
+[node name="powerpole5" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -33 )
+
+[node name="SK_Veh_Truck_Troop_02" parent="." instance=ExtResource( 38 )]
+transform = Transform( -4.65661e-10, -0.01, 4.37114e-10, 0, -4.37114e-10, -0.01, 0.01, -4.65661e-10, 2.77556e-17, 15, 0, -49.4 )
+
+[node name="SK_Veh_Truck_Troop_03" parent="." instance=ExtResource( 38 )]
+transform = Transform( -4.65661e-10, -0.01, 4.37114e-10, 0, -4.37114e-10, -0.01, 0.01, -4.65661e-10, 2.77556e-17, 15.5, 0, -43.5 )
+
+[node name="SA_Prop_BurntAPC_01" parent="." instance=ExtResource( 39 )]
+transform = Transform( -0.707107, 0.707107, -3.09086e-08, 0, -4.37114e-08, -1, -0.707107, -0.707107, 3.09086e-08, 31.3, -0.2, -108.8 )
+
+[node name="SA_Prop_BurntBrown_Ute_01" parent="." instance=ExtResource( 42 )]
+transform = Transform( 0.965926, 0.258819, -1.13133e-08, 0, -4.37114e-08, -1, -0.258819, 0.965926, -4.2222e-08, 42, -0.2, -161 )
+
+[node name="SK_Veh_Troop_Car_01" parent="." instance=ExtResource( 44 )]
+transform = Transform( -0.01, -8.74228e-10, 3.82137e-17, 0, -4.37114e-10, -0.01, 8.74228e-10, -0.01, 4.37114e-10, 7.7, 0, 1 )
+
+[node name="SK_Veh_tank_02" parent="." instance=ExtResource( 36 )]
+transform = Transform( 0.00258819, 0.00965926, -4.2222e-10, 0, -4.37114e-10, -0.01, -0.00965926, 0.00258819, -1.13133e-10, -26, 0, -47 )
+
+[node name="SK_Veh_Troop_Car_02" parent="." instance=ExtResource( 44 )]
+transform = Transform( -0.00707107, 0.00707107, -3.09086e-10, 0, -4.37114e-10, -0.01, -0.00707107, -0.00707107, 3.09086e-10, 33.4, 0, -98.7 )
+
+[node name="SK_Veh_Truck_Troop_04" parent="." instance=ExtResource( 38 )]
+transform = Transform( -0.01, -8.74228e-10, 3.82137e-17, 0, -4.37114e-10, -0.01, 8.74228e-10, -0.01, 4.37114e-10, 30, 0, -85 )
+
+[node name="SA_Prop_BurntBlack_Car_01" parent="." instance=ExtResource( 40 )]
+transform = Transform( 0.866025, -0.5, 2.18557e-08, 0, -4.37114e-08, -1, 0.5, 0.866025, -3.78552e-08, 38.5, -0.2, -135 )
+
+[node name="SA_Prop_BurntBrown_Ute_02" parent="." instance=ExtResource( 41 )]
+transform = Transform( -0.707107, 0.707107, -3.09086e-08, 0, -4.37114e-08, -1, -0.707107, -0.707107, 3.09086e-08, -7.89999, 0.1, -144 )
+
+[node name="SA_Prop_BurntBlack_Ute_01" parent="." instance=ExtResource( 43 )]
+transform = Transform( 0.34202, 0.939693, -4.10753e-08, 0, -4.37114e-08, -1, -0.939693, 0.34202, -1.49502e-08, -26.7, 0, -185 )
+
+[node name="SA_Prop_BurntBlack_RV_01" parent="." instance=ExtResource( 37 )]
+transform = Transform( -0.707107, -0.707107, 3.09086e-08, 0, -4.37114e-08, -1, 0.707107, -0.707107, 3.09086e-08, 12, 0, -166 )
+
+[node name="SA_Prop_BurntBlack_FamilyCar_01" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.707107, -0.612372, -0.353554, 0, 0.5, -0.866025, 0.707107, 0.612372, 0.353554, 12.9, 3.9, -162.7 )

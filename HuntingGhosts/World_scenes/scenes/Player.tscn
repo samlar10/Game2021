@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://World_scenes/scenes/PlayerAltMove.gd" type="Script" id=1]
 
@@ -6,8 +6,6 @@
 
 [sub_resource type="CapsuleMesh" id=2]
 material = SubResource( 1 )
-
-[sub_resource type="PrismMesh" id=3]
 
 [sub_resource type="CapsuleShape" id=4]
 
@@ -20,18 +18,12 @@ transform = Transform( 0.4, 0, 0, 0, -1.74846e-08, -0.5, 0, 0.4, -2.18557e-08, 0
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="PointDirection" type="MeshInstance" parent="."]
-transform = Transform( -0.08, -2.09815e-08, 9.55339e-16, 0, -1.04907e-08, -0.25, 6.99382e-09, -0.24, 1.09278e-08, 0, -5.96046e-08, -0.938024 )
-visible = false
-mesh = SubResource( 3 )
-material/0 = null
-
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 0.4, 0, 0, 0, -1.74846e-08, -0.5, 0, 0.4, -2.18557e-08, 0, 0, 0 )
 shape = SubResource( 4 )
 
-[node name="Position3D" type="Position3D" parent="."]
-transform = Transform( -0.4, -3.49691e-08, 1.91069e-15, 0, -1.74846e-08, -0.5, 3.49691e-08, -0.4, 2.18557e-08, 0, -5.96046e-08, -0.97755 )
+[node name="Case_Ejector" type="Position3D" parent="."]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.5, 0.235903, -5.96046e-08, -0.681022 )
 
 [node name="FloorRay" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.551451, 0 )
@@ -43,8 +35,15 @@ transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 8, 6 )
 
 [node name="SpotLight" type="SpotLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.99298, -0.118283, 0, 0.118283, 0.99298, -0.0203047, 2.38419e-07, -0.476317 )
-light_energy = 9.26
+light_energy = 4.86
 shadow_enabled = true
 shadow_contact = 6.41
-spot_range = 184.4
+spot_range = 80.0
 spot_angle = 15.0
+
+[node name="gun_barrel" type="Position3D" parent="."]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.5, 0, 0, -0.986352 )
+
+[node name="GunTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="GunTimer" to="." method="_on_GunTimer_timeout"]

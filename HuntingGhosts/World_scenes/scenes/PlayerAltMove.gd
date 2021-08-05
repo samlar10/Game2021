@@ -1,17 +1,20 @@
 extends KinematicBody
 
+onready var tracer = preload("res://World_scenes/scenes/TracerFire.tscn")
+onready var case = preload("res://World_scenes/scenes/BulletCasing.tscn")
+
+
 var gravity = Vector3.DOWN * 80 # strength of gravity
-
 var speed = 6  # movement speed
-
 var jump_speed = 18  # jump strength
-
 var spin = 0.1  # rotation speed
 
 #onready var camera = get_parent().get_node("Camera")
 var cursor_pos = Vector3.ZERO
 var velocity = Vector3()
 var jump = false
+
+var can_fire = true
 
 #func look_at_curser():
 #	var player_pos = global_transform.origin
@@ -70,3 +73,21 @@ func _unhandled_input(event):
 			rotate_y(-lerp(0, spin, event.relative.x/10))
 		elif event.relative.x < 0:
 			rotate_y(-lerp(0, spin, event.relative.x/10))
+
+
+func _process(delta):
+	if Input.is_action_pressed("player_fire") and can_fire:
+		can_fire = false
+		var new_case = case.instance()
+		new_case.global_transform = $Case_Ejector.global_transform
+		get_parent().add_child(new_case)
+		
+		var new_tracer = tracer.instance()
+		new_tracer.global_transform = $gun_barrel.global_transform
+		get_parent().add_child(new_tracer)
+		
+	pass
+
+
+func _on_GunTimer_timeout():
+	can_fire = true

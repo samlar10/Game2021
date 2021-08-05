@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://3D assests/gtlf/bullet_casing.gltf" type="PackedScene" id=1]
+[ext_resource path="res://World_scenes/scenes/BulletCasing.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.886694
+height = 3.57588
+
+[node name="BulletCasing" type="RigidBody"]
+script = ExtResource( 2 )
+
+[node name="bullet_casing" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, -0.0176858 )
+shape = SubResource( 1 )
+
+[node name="VisibilityNotifier" type="VisibilityNotifier" parent="."]
+transform = Transform( 0.200922, 0, 0, 0, 0.200922, 0, 0, 0, 0.200922, 0, 0, -0.0490531 )
+aabb = AABB( -1, -1, -2.6323, 2, 2, 5.26461 )
+
+[connection signal="camera_exited" from="VisibilityNotifier" to="." method="_on_VisibilityNotifier_camera_exited"]
