@@ -1,13 +1,17 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://World_scenes/scenes/PlayerAltMove.gd" type="Script" id=1]
+[ext_resource path="res://World_scenes/Guns/M4A1_sand.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World_scenes/scenes/Weapon.gd" type="Script" id=3]
+[ext_resource path="res://World_scenes/scenes/UI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://World_scenes/scenes/Weapon.tscn" type="PackedScene" id=5]
 
 [sub_resource type="SpatialMaterial" id=1]
 
 [sub_resource type="CapsuleMesh" id=2]
 material = SubResource( 1 )
 
-[sub_resource type="CapsuleShape" id=4]
+[sub_resource type="CapsuleShape" id=3]
 
 [node name="Player" type="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.862336, 0 )
@@ -20,18 +24,23 @@ material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 0.4, 0, 0, 0, -1.74846e-08, -0.5, 0, 0.4, -2.18557e-08, 0, 0, 0 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="Case_Ejector" type="Position3D" parent="."]
-transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.5, 0.235903, -5.96046e-08, -0.681022 )
+transform = Transform( 0.382336, 0.117556, 0, -0.117556, 0.382336, 0, 0, 0, 0.4, 0.235903, 0.0862747, -0.849181 )
 
 [node name="FloorRay" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.551451, 0 )
 enabled = true
 cast_to = Vector3( 0, -0.244, 0 )
 
-[node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 8, 6 )
+[node name="SpringArm" type="SpringArm" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0.330038, 0.0099268 )
+spring_length = 8.0
+margin = 0.5
+
+[node name="Camera" type="Camera" parent="SpringArm"]
+transform = Transform( 1, -3.55271e-15, 3.55271e-15, 3.55271e-15, 1, 0, -3.55271e-15, 0, 1, 0, 0.0746806, 7.86874 )
 
 [node name="SpotLight" type="SpotLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.99298, -0.118283, 0, 0.118283, 0.99298, -0.0203047, 2.38419e-07, -0.476317 )
@@ -42,8 +51,19 @@ spot_range = 80.0
 spot_angle = 15.0
 
 [node name="gun_barrel" type="Position3D" parent="."]
-transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.5, 0, 0, -0.986352 )
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.2, 0.071, -1.5 )
 
-[node name="GunTimer" type="Timer" parent="."]
+[node name="GunRay" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.079, -0.8 )
+enabled = true
+cast_to = Vector3( 0, 0, -100 )
 
-[connection signal="timeout" from="GunTimer" to="." method="_on_GunTimer_timeout"]
+[node name="M4A1_sand" parent="." instance=ExtResource( 2 )]
+transform = Transform( -2.18557e-09, 0, -0.05, 0, 0.05, 0, 0.05, 0, -2.18557e-09, 0.2, 0.071, -0.8 )
+
+[node name="Spatial" type="Spatial" parent="."]
+script = ExtResource( 3 )
+
+[node name="UI" parent="." instance=ExtResource( 4 )]
+
+[node name="Weapon" parent="." instance=ExtResource( 5 )]
