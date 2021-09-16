@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Asphalt_Corner_01.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Asphalt_Short_01.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Tile_Asphalt_01.tscn" type="PackedScene" id=7]
 [ext_resource path="res://World_scenes/MilitaryWalls/powerpole.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_straight_mesh_01.tscn" type="PackedScene" id=9]
+[ext_resource path="res://DesertMountainRange.jpg" type="Texture" id=10]
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Asphalt_Town_Transition_01.tscn" type="PackedScene" id=11]
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Dirt_Long_01.tscn" type="PackedScene" id=12]
 [ext_resource path="res://World_scenes/Militaryroad/SM_Env_Road_Asphalt_Dirt_Transition_01.tscn" type="PackedScene" id=13]
@@ -43,6 +44,14 @@
 [ext_resource path="res://World_scenes/Vehicles/SA_Prop_BurntBrown_Ute_01.tscn" type="PackedScene" id=42]
 [ext_resource path="res://World_scenes/Vehicles/SA_Prop_BurntBlack_Ute_01.tscn" type="PackedScene" id=43]
 [ext_resource path="res://World_scenes/Vehicles/SK_Veh_Troop_Car_01.tscn" type="PackedScene" id=44]
+
+[sub_resource type="QuadMesh" id=1]
+resource_local_to_scene = true
+
+[sub_resource type="Skin" id=2]
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 10 )
 
 [node name="Level_1" type="Spatial"]
 
@@ -532,6 +541,102 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, 
 [node name="SM_Env_Tile_Asphalt_76" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -10 )
 
+[node name="SM_Env_Tile_Asphalt_109" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 15, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_113" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 10, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_110" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 20, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_111" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 25, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_112" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 30, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_114" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -10, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_115" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -15, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_116" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -5, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_117" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 0, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_164" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -5, 0, 20 )
+
+[node name="SM_Env_Tile_Asphalt_165" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 0, 0, 20 )
+
+[node name="SM_Env_Tile_Asphalt_118" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 5, 5, 20 )
+
+[node name="SM_Env_Tile_Asphalt_119" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 15, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_120" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 10, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_146" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 20, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_147" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 25, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_148" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 30, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_149" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -10, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_150" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -15, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_151" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -5, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_152" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 0, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_153" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 5, 10, 20 )
+
+[node name="SM_Env_Tile_Asphalt_154" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 15, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_155" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 10, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_156" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 20, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_157" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 25, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_158" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 30, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_159" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -10, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_160" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -15, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_161" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, -5, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_162" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 0, 15, 20 )
+
+[node name="SM_Env_Tile_Asphalt_163" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, -1.06581e-14, 0, 1.06581e-14, 1, 5, 15, 20 )
+
 [node name="SM_Env_Tile_Asphalt_77" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 15, 0, -15 )
 
@@ -627,9 +732,6 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, 
 
 [node name="SM_Env_Tile_Asphalt_107" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 25, 0, -50 )
-
-[node name="SM_Env_Tile_Asphalt_145" parent="." instance=ExtResource( 7 )]
-transform = Transform( 11, 0, 0, 0, 4, -2.13163e-13, 0, 4.26326e-14, 20, 33, 15, 20 )
 
 [node name="SM_Env_Tile_Asphalt_121" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 10, 0, 20 )
@@ -1902,3 +2004,12 @@ transform = Transform( -0.707107, -0.707107, 3.09086e-08, 0, -4.37114e-08, -1, 0
 
 [node name="SA_Prop_BurntBlack_FamilyCar_01" parent="." instance=ExtResource( 35 )]
 transform = Transform( 0.707107, -0.612372, -0.353554, 0, 0.5, -0.866025, 0.707107, 0.612372, 0.353554, 12.9, 3.9, -162.7 )
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
+transform = Transform( -2.18557e-05, 0, 100, 0, 200, 0, -500, 0, -4.37114e-06, -192.761, 9, -121.487 )
+mesh = SubResource( 1 )
+skin = SubResource( 2 )
+material/0 = SubResource( 3 )

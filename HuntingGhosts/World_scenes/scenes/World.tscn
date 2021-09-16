@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://WorldEnvironment.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World_scenes/scenes/Levels/Level_1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World_scenes/scenes/Player.tscn" type="PackedScene" id=4]
 
@@ -9,3 +10,5 @@
 transform = Transform( -0.00157086, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00157086, -8.45578, 1.02674, 2.833 )
 
 [node name="Level_1" parent="." instance=ExtResource( 2 )]
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 1 )]
