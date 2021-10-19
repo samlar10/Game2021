@@ -15,6 +15,7 @@ var reloading = false
 
 func _process(delta):
 	ammo_label.set_text("%d / %d" % [current_ammo, clip_size])
+#	this shows the player how much ammo is in the gun. just a place holder until I design the new ammo icons and code for them.
 
 	if Input.is_action_pressed("primary_fire") and can_fire:
 		if current_ammo > 0 and not reloading:
@@ -33,8 +34,9 @@ func _process(delta):
 			current_ammo = clip_size
 			reloading = false
 			print("reloded")
+#how the player fires, makes sure the player has ammo in their gun and if they dont then they can't shoot and reloads for them
 
-#add function where the  player "aims in" send signal out so that fire rate changes see trello for brainstorm
+#(to be done) add function where the  player "aims in" send signal out so that fire rate changes see trello for brainstorm
 #
 #	if Input.is_action_pressed("ui_aim") and can_fire and not aiming:
 #		if current_ammo > 0 and not reloading:

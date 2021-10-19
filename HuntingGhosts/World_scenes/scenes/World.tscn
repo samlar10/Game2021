@@ -8,7 +8,7 @@
 [node name="World" type="Spatial"]
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-transform = Transform( -0.00157064, -2.64833e-05, 0.999999, -0.0168591, 0.999858, 0, -0.999857, -0.0168591, -0.00157086, -8.45578, 0.643139, 2.833 )
+transform = Transform( 0.999857, 0.0168591, 0.00157082, -0.0168591, 0.999858, 0, -0.0015706, -2.64826e-05, 0.999999, -5.10193, 2.34112, 11.1366 )
 
 [node name="Level_1" parent="." instance=ExtResource( 2 )]
 
