@@ -4,6 +4,7 @@ var Player
 var follow_player = false
 var move_speed = 100
 var can_shoot = false
+var gravity = Vector3.DOWN * 80
 onready var bullet
 
 func _ready():

@@ -5,7 +5,7 @@ export var sfire_rate = 0.5
 export var clip_size = 30
 export var reload_rate = 1
 onready var ammo_label = $"../UI/Label"
-onready var gunray = $"../GunRay"
+onready var gunray = $GunRay
 onready var particles = preload("res://World_scenes/scenes/Particles.tscn")
 
 var aiming = false
@@ -22,10 +22,12 @@ func _process(delta):
 			print("bang")
 			can_fire = false
 			current_ammo -= 1
+			check_collision()
 			yield(get_tree().create_timer(pfire_rate), "timeout")
 			var p = particles.instance()
 			gunray.get_collider().add_child(p)
 			p.global_transform.origin = gunray.get_collision_point()
+			print("explosion")
 			can_fire = true
 		elif not reloading:
 			print("reloading")
@@ -35,7 +37,14 @@ func _process(delta):
 			reloading = false
 			print("reloded")
 #how the player fires, makes sure the player has ammo in their gun and if they dont then they can't shoot and reloads for them
-
+func check_collision():
+	if gunray.is_colliding():
+		var collider = gunray.get_collider()
+		if collider.is_in_group("Enemies"):
+			collider.queue_free()
+			print("killed" + collider.name)
+	else:
+		pass
 #(to be done) add function where the  player "aims in" send signal out so that fire rate changes see trello for brainstorm
 #
 #	if Input.is_action_pressed("ui_aim") and can_fire and not aiming:

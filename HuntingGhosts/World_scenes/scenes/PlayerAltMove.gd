@@ -17,13 +17,17 @@ var jump = false
 var delt = 0
 #var can_fire = true
 #
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+
 
 func _input(event):
 	var turn_speed = 0.005
-	print(event)
+#	print(event)
 	if event is InputEventMouseMotion:
 		
-		print("mousemove", event.get_relative())
+#		print("mousemove", event.get_relative())
 		rotate_y(turn_speed * -event.get_relative().x )
 		
 func look_at_curser():
@@ -92,7 +96,9 @@ func _unhandled_input(event):
 # code that allows the player to rotate relitive to the mouse
 
 #					Old shooting code where it used projectivles instead of the new and improved raycast
-#func _process(delta):
+func _process(delta):
+	if Input.is_action_just_pressed("ui_cancel"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 #	pass
 #	if Input.is_action_pressed("player_fire") and can_fire:
 #		can_fire = false
