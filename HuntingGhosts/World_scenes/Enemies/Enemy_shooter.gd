@@ -4,11 +4,18 @@ var Player
 var follow_player = false
 var move_speed = 100
 var can_shoot = false
-var gravity = Vector3.DOWN * 80
+var gravity = Vector3.DOWN * 1000
+var health = 100
 onready var bullet
 
 func _ready():
 	pass
+
+func _process(delta):
+	if health <= 0:
+		queue_free()
+		print("killed")
+	
 
 func _physics_process(delta):
 	if follow_player == true:
@@ -18,6 +25,7 @@ func _physics_process(delta):
 		if $RayCast.get_collider() != null:
 			if $RayCast.get_collider().name == "Player":
 				move_and_slide(facing *  move_speed * delta, Vector3.UP)
+				
 #	code for how it follows the player
 
 
