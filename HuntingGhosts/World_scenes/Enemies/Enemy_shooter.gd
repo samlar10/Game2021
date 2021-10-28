@@ -2,7 +2,7 @@ extends KinematicBody
 
 var Player
 var follow_player = false
-var move_speed = 100
+var move_speed = 200
 var can_shoot = false
 var gravity = Vector3.DOWN * 1000
 var health = 100
