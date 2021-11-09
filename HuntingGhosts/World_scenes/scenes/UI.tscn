@@ -1,8 +1,11 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://World_scenes/scenes/UI.gd" type="Script" id=1]
 
 [node name="UI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -12,11 +15,34 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -167.0
-margin_top = -79.0
+margin_left = -168.26
+margin_top = -82.7797
+margin_right = -1.25989
+margin_bottom = -3.77972
 text = "Ammo
 30/30
 "
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.093
+anchor_top = 0.142
+anchor_right = 0.917
+anchor_bottom = 0.817
+margin_left = -6.6446
+margin_top = -9.78741
+margin_right = 14.5793
+margin_bottom = 8.21259
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_right = 184.0
+margin_bottom = 59.0
+uppercase = true

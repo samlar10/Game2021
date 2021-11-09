@@ -35,7 +35,7 @@ func _process(delta):
 			reloading = true
 			yield(get_tree().create_timer(reload_rate), "timeout")
 			current_ammo = clip_size
-			reloading = false
+			reloading = false 
 			print("reloded")
 #how the player fires, makes sure the player has ammo in their gun and if they dont then they can't shoot and reloads for them
 func check_collision():

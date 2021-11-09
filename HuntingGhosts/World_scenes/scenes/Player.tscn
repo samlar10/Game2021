@@ -12,10 +12,9 @@ material = SubResource( 1 )
 
 [sub_resource type="CapsuleShape" id=3]
 
-[node name="Player" type="KinematicBody" groups=[
-"Player",
-]]
+[node name="Player" type="KinematicBody" groups=["Player"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.862336, 0 )
+collision_layer = 3
 script = ExtResource( 1 )
 
 [node name="Body" type="MeshInstance" parent="."]
@@ -76,3 +75,9 @@ shadow_color = Color( 0, 0.0862745, 1, 1 )
 shadow_contact = 4.93
 spot_range = 102.166
 spot_angle = 0.328939
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

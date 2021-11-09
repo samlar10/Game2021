@@ -3,8 +3,11 @@ extends KinematicBody
 onready var tracer = preload("res://World_scenes/scenes/TracerFire.tscn")
 onready var spark = preload("res://World_scenes/scenes/Particles.tscn")
 onready var case = preload("res://World_scenes/scenes/BulletCasingRemake.tscn")
+onready var game_label = $UI/Label2
+onready var health_display = $UI/Label3
 
 
+var health = 100
 var gravity = Vector3.DOWN * 80 # strength of gravity
 var speed = 6  # movement speed
 var jump_speed = 18  # jump strength
@@ -15,6 +18,7 @@ var cursor_pos = Vector3.ZERO
 var velocity = Vector3()
 var jump = false
 var delt = 0
+var current_health = health
 #var can_fire = true
 #
 func _ready():
@@ -95,10 +99,23 @@ func _unhandled_input(event):
 			rotate_y(-lerp(0, spin, event.relative.x/10))
 # code that allows the player to rotate relitive to the mouse
 
-#					Old shooting code where it used projectivles instead of the new and improved raycast
+#Old shooting code where it used projectivles instead of the new and improved raycast
 func _process(delta):
+	health_display.set_text(" %d / %d " % [health,current_health])
+	
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	if health <= 0:
+		game_label.set_text("GAME OVER")
+		health = 0
+		set_process(false)
+		set_physics_process(false)
+		$Timer.start()
+		
+		
+		
+
+		
 #	pass
 #	if Input.is_action_pressed("player_fire") and can_fire:
 #		can_fire = false
@@ -128,3 +145,8 @@ func _process(delta):
 #
 #func _on_GunTimer_timeout():
 #	can_fire = true
+
+
+func _on_Timer_timeout():
+	pass
+	#get_tree().change_scene(titlescreen) # Replace with function body.
