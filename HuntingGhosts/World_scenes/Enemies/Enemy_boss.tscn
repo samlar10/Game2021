@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://World_scenes/Enemies/Enemy_boss.gd" type="Script" id=1]
 [ext_resource path="res://World_scenes/Guns/AK47_enemey.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World_scenes/scenes/UI.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.387562
@@ -71,6 +72,8 @@ one_shot = true
 
 [node name="Gun" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.657955, -0.5 )
+
+[node name="UI" parent="." instance=ExtResource( 3 )]
 
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
 [connection signal="body_exited" from="Area" to="." method="_on_Area_body_exited"]

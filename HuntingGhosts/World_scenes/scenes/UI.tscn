@@ -46,3 +46,6 @@ __meta__ = {
 margin_right = 184.0
 margin_bottom = 59.0
 uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

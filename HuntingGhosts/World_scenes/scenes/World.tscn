@@ -16,7 +16,7 @@ transform = Transform( 0.999857, 0.0168591, 0.00157082, -0.0168591, 0.999858, 0,
 [node name="WorldEnvironment" parent="." instance=ExtResource( 1 )]
 
 [node name="Enemy_shooter" parent="." instance=ExtResource( 3 )]
-transform = Transform( -2.68221e-07, 0, -1, 0, 1, 0, 1, 0, -2.68221e-07, -41.0909, 0, -4.15074 )
+transform = Transform( -1, 0, 3.27826e-07, 0, 1, 0, -3.27826e-07, 0, -1, -41.0909, 0, -24.1507 )
 
 [node name="Enemy_boss" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -78 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, -162 )

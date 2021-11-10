@@ -6,7 +6,7 @@ var follow_player = false
 var move_speed = 200
 var can_shoot = false
 var gravity = Vector3.DOWN * 1000
-var health = 200
+var health = 50
 onready var bullet
 onready var shoottimer = $ShootTimer
 onready var health_display = $UI/Label3

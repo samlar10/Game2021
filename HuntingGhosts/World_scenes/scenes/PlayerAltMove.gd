@@ -106,8 +106,9 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	if health <= 0:
-		game_label.set_text("GAME OVER")
 		health = 0
+		game_label.set_text("GAME OVER")
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		set_process(false)
 		set_physics_process(false)
 		$Timer.start()
@@ -149,4 +150,4 @@ func _process(delta):
 
 func _on_Timer_timeout():
 	pass
-	#get_tree().change_scene(titlescreen) # Replace with function body.
+	get_tree().change_scene("res://World_scenes/scenes/TitleScreen.tscn") # Replace with function body.

@@ -5,16 +5,18 @@ var follow_player = false
 var move_speed = 200
 var can_shoot = false
 var gravity = Vector3.DOWN * 1000
-var health = 200
+var health = 100
 onready var bullet
+onready var game_label = $"../UI/Label2"
 
 func _ready():
 	pass
 
 func _process(delta):
 	if health <= 0:
+		game_label.set_text("GAME OVER")
 		queue_free()
-		print("killed")
+		print("winner")
 	
 
 func _physics_process(delta):
