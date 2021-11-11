@@ -7,16 +7,20 @@ var can_shoot = false
 var gravity = Vector3.DOWN * 1000
 var health = 100
 onready var bullet
-onready var game_label = $"../UI/Label2"
+#onready var UI = preload("res://World_scenes/scenes/UI.tscn")
+signal boss_death
+
 
 func _ready():
 	pass
 
 func _process(delta):
 	if health <= 0:
-		game_label.set_text("GAME OVER")
+		#emit_signal("Boss_death")
+		get_tree().call_group("Player","_on_Boss_death")
+		#print("signal sent")
 		queue_free()
-		print("winner")
+
 	
 
 func _physics_process(delta):
@@ -42,3 +46,5 @@ func _on_Area_body_exited(body):
 	if body.name == "Player":
 		$RayCast.set_enabled(false)
 		follow_player = false
+
+

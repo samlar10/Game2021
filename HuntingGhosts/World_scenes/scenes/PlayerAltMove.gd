@@ -103,6 +103,7 @@ func _unhandled_input(event):
 func _process(delta):
 	health_display.set_text(" %d / %d " % [health,current_health])
 	
+	
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	if health <= 0:
@@ -151,3 +152,10 @@ func _process(delta):
 func _on_Timer_timeout():
 	pass
 	get_tree().change_scene("res://World_scenes/scenes/TitleScreen.tscn") # Replace with function body.
+
+func _on_Boss_death():
+	game_label.set_text("winner")
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	set_process(false)
+	set_physics_process(false)
+	$Timer.start()
