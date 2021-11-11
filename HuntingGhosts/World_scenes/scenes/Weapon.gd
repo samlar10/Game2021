@@ -20,7 +20,7 @@ func _process(delta):
 
 	if Input.is_action_pressed("primary_fire") and can_fire:
 		if current_ammo > 0 and not reloading:
-			print("bang")
+#			print("bang")
 			can_fire = false
 			current_ammo -= 1
 			check_collision()
@@ -28,22 +28,22 @@ func _process(delta):
 			var p = particles.instance()
 			gunray.get_collider().add_child(p)
 			p.global_transform.origin = gunray.get_collision_point()
-			print("explosion")
+#			print("explosion")
 			can_fire = true
 		elif not reloading:
-			print("reloading")
+#			print("reloading")
 			reloading = true
 			yield(get_tree().create_timer(reload_rate), "timeout")
 			current_ammo = clip_size
 			reloading = false 
-			print("reloded")
+#			print("reloded")
 #how the player fires, makes sure the player has ammo in their gun and if they dont then they can't shoot and reloads for them
 func check_collision():
 	if gunray.is_colliding():
 		var target = gunray.get_collider()
 		if target.is_in_group("Enemies"):
 			target.health -= damage
-			print("hit" + target.name)
+#			print("hit" + target.name)
 
 		
 #(to be done) add function where the  player "aims in" send signal out so that fire rate changes see trello for brainstorm

@@ -67,7 +67,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.440548, 0 )
 cast_to = Vector3( 0, 0, -41 )
 
 [node name="Timer" type="Timer" parent="."]
-one_shot = true
+wait_time = 0.5
 
 [node name="Gun" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.657955, -0.5 )
@@ -75,3 +75,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.657955, -0.5 )
 [connection signal="boss_death" from="." to="." method="_on_Enemy_boss_boss_death"]
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
 [connection signal="body_exited" from="Area" to="." method="_on_Area_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

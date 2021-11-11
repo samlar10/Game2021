@@ -23,6 +23,7 @@ var current_health = health
 #
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+#	hides the mouse when playing
 
 
 
@@ -33,7 +34,8 @@ func _input(event):
 		
 #		print("mousemove", event.get_relative())
 		rotate_y(turn_speed * -event.get_relative().x )
-		
+#		rotates player 
+
 func look_at_curser():
 	pass
 #	var player_pos = global_transform.origin
@@ -99,7 +101,7 @@ func _unhandled_input(event):
 			rotate_y(-lerp(0, spin, event.relative.x/10))
 # code that allows the player to rotate relitive to the mouse
 
-#Old shooting code where it used projectivles instead of the new and improved raycast
+
 func _process(delta):
 	health_display.set_text(" %d / %d " % [health,current_health])
 	
@@ -113,11 +115,11 @@ func _process(delta):
 		set_process(false)
 		set_physics_process(false)
 		$Timer.start()
-		
+#		When player dies it freezes the game and timer starts to return to title screen
 		
 		
 
-		
+#Old shooting code where it used projectivles instead of the new and improved raycast
 #	pass
 #	if Input.is_action_pressed("player_fire") and can_fire:
 #		can_fire = false
@@ -152,6 +154,7 @@ func _process(delta):
 func _on_Timer_timeout():
 	pass
 	get_tree().change_scene("res://World_scenes/scenes/TitleScreen.tscn") # Replace with function body.
+#Returns to title screen when player dies or wins
 
 func _on_Boss_death():
 	game_label.set_text("winner")
@@ -159,3 +162,4 @@ func _on_Boss_death():
 	set_process(false)
 	set_physics_process(false)
 	$Timer.start()
+#picks up sigal from when boss dies ending the game

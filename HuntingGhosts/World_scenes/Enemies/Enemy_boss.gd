@@ -6,6 +6,7 @@ var move_speed = 200
 var can_shoot = false
 var gravity = Vector3.DOWN * 1000
 var health = 100
+var damage = 5
 onready var bullet
 #onready var UI = preload("res://World_scenes/scenes/UI.tscn")
 signal boss_death
@@ -20,6 +21,7 @@ func _process(delta):
 		get_tree().call_group("Player","_on_Boss_death")
 		#print("signal sent")
 		queue_free()
+		#when the boss dies it sends out the signal so that code for the player can identify whenit dies being able to show the winning text and then reture in to the title screen
 
 	
 
@@ -48,3 +50,11 @@ func _on_Area_body_exited(body):
 		follow_player = false
 
 
+
+
+func _on_Timer_timeout():
+	if $RayCast.is_colliding():
+		var hit = $RayCast.get_collider()
+		if hit.is_in_group("Player"):
+			print("hit")
+			hit.health -= damage
